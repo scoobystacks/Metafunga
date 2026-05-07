@@ -1,0 +1,2 @@
+# Metafunga
+Fungi phylogeny game
