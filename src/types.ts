@@ -23,7 +23,7 @@ export interface Morphology {
 export type Edibility = "choice" | "edible" | "inedible" | "toxic" | "deadly" | "psychoactive";
 export type Ecology = "mycorrhizal" | "saprotrophic" | "parasitic";
 
-export type Difficulty = "easy" | "medium" | "hard";
+export type Difficulty = "easy" | "medium" | "hard" | "insane";
 
 export interface Fungus {
   id: string;

@@ -19,6 +19,7 @@ const DIFFICULTY_CLS: Record<Difficulty, string> = {
   easy:   "bg-myco-100 text-myco-800",
   medium: "bg-amber-100 text-amber-800",
   hard:   "bg-red-100 text-red-800",
+  insane: "bg-purple-100 text-purple-900",
 };
 
 const EDIBILITY_BADGE: Record<string, { label: string; cls: string }> = {

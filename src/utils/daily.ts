@@ -1,11 +1,11 @@
-import { FUNGI } from "../data/fungi";
+import { ACTIVE_FUNGI } from "../data/fungi";
 
 const EPOCH = new Date("2026-05-07T00:00:00Z");
 
 // Pre-shuffled order (Fisher-Yates with seed 42) so the sequence isn't just indices.
 // Generated once and baked in so it's deterministic across all clients.
 function buildDailyOrder(): string[] {
-  const ids = FUNGI.map((f) => f.id);
+  const ids = ACTIVE_FUNGI.map((f) => f.id);
   // Seeded LCG for reproducible shuffle
   let seed = 42;
   const rng = () => {
