@@ -2,15 +2,12 @@ import type { Fungus, Rank } from "../types";
 import { RANKS } from "../types";
 
 export function deepestSharedRank(guess: Fungus, target: Fungus): Rank | null {
-  // Walk from most specific (species) toward most general (phylum).
-  // Kingdom is always "Fungi" for both, so we stop at phylum.
   for (let i = RANKS.length - 1; i >= 1; i--) {
     const rank = RANKS[i];
     if (guess.taxonomy[rank] === target.taxonomy[rank]) {
       return rank;
     }
   }
-  // They share only kingdom (always true) — return null to mean "kingdom only"
   return null;
 }
 
@@ -59,4 +56,22 @@ export function matchDescription(rank: Rank | null): string {
 export function matchDepth(rank: Rank | null): number {
   if (rank === null) return 0;
   return RANKS.indexOf(rank);
+}
+
+export function deepestRevealedRank(revealedRanks: Set<Rank>): Rank {
+  for (let i = RANKS.length - 1; i >= 0; i--) {
+    if (revealedRanks.has(RANKS[i])) return RANKS[i];
+  }
+  return "kingdom";
+}
+
+export function nextHintableRank(revealedRanks: Set<Rank>): Rank | null {
+  for (let i = 0; i < RANKS.length; i++) {
+    if (!revealedRanks.has(RANKS[i])) return RANKS[i];
+  }
+  return null;
+}
+
+export function wikipediaUrl(value: string): string {
+  return `https://en.wikipedia.org/wiki/${value.replace(/ /g, "_")}`;
 }

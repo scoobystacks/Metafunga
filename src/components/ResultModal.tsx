@@ -1,6 +1,7 @@
 import { useCallback } from "react";
-import type { Fungus, GameStatus, Guess } from "../types";
+import type { Difficulty, Fungus, GameStatus, Guess, Rank } from "../types";
 import { PhylogenyTree } from "./PhylogenyTree";
+import { WikipediaPreview } from "./WikipediaPreview";
 import { RANKS } from "../types";
 import { matchDepth } from "../utils/phylogeny";
 
@@ -10,7 +11,15 @@ interface Props {
   guesses: Guess[];
   dayNumber: number;
   onClose: () => void;
+  mode?: "daily" | "practice";
+  onPlayPractice?: () => void;
 }
+
+const DIFFICULTY_CLS: Record<Difficulty, string> = {
+  easy:   "bg-myco-100 text-myco-800",
+  medium: "bg-amber-100 text-amber-800",
+  hard:   "bg-red-100 text-red-800",
+};
 
 const EDIBILITY_BADGE: Record<string, { label: string; cls: string }> = {
   choice: { label: "Choice Edible", cls: "bg-myco-500 text-white" },
@@ -54,16 +63,19 @@ function buildShareText(
   return [`Metafunga #${dayNumber} ${outcome}`, ...rows].join("\n");
 }
 
-export function ResultModal({ target, status, guesses, dayNumber, onClose }: Props) {
+const allRanksSet = new Set(RANKS) as Set<Rank>;
+const emptySet = new Set<Rank>();
+
+export function ResultModal({ target, status, guesses, dayNumber, onClose, mode = "daily", onPlayPractice }: Props) {
   const edibility = EDIBILITY_BADGE[target.edibility] ?? EDIBILITY_BADGE.inedible;
   const shareText = buildShareText(guesses, target.id, dayNumber, status);
-  const allRanks = new Set(RANKS);
+
+  const allNames = [target.commonName, ...target.aliases];
 
   const copyShare = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(shareText);
     } catch {
-      // fallback: show alert
       window.prompt("Copy this:", shareText);
     }
   }, [shareText]);
@@ -95,15 +107,57 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose }: Pro
             </p>
           </div>
 
-          {/* Fungus name & image */}
+          {/* Fungus images */}
+          <div className="flex gap-3 justify-center">
+            <div className="flex flex-col items-center gap-1">
+              <img
+                src={target.imageUrl}
+                alt={target.commonName}
+                className="w-36 h-36 object-cover rounded-xl shadow-md"
+              />
+              <span className="text-xs text-spore-400">Main photo</span>
+            </div>
+            {target.crossSectionUrl && (
+              <div className="flex flex-col items-center gap-1">
+                <img
+                  src={target.crossSectionUrl}
+                  alt={`${target.commonName} cross-section`}
+                  className="w-36 h-36 object-cover rounded-xl shadow-md"
+                />
+                <span className="text-xs text-spore-400">Cross-section</span>
+              </div>
+            )}
+          </div>
+
+          {/* Species names */}
           <div className="text-center">
-            <img
-              src={target.imageUrl}
-              alt={target.commonName}
-              className="w-40 h-40 object-cover rounded-xl mx-auto shadow-md mb-3"
-            />
             <p className="text-xl font-bold text-spore-900">{target.commonName}</p>
             <p className="italic text-spore-600 text-sm">{target.scientificName}</p>
+            {allNames.length > 1 && (
+              <p className="text-xs text-spore-500 mt-1">
+                Also called: {allNames.slice(1).join(", ")}
+              </p>
+            )}
+            {target.synonyms.length > 0 && (
+              <p className="text-xs text-spore-400 italic mt-0.5">
+                Previously known as: {target.synonyms.join(", ")}
+              </p>
+            )}
+          </div>
+
+          {/* Wikipedia intro for the species */}
+          <div>
+            <a
+              href={`https://en.wikipedia.org/wiki/${target.scientificName.replace(/ /g, "_")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-myco-600 hover:underline font-semibold"
+            >
+              Wikipedia: {target.scientificName} ↗
+            </a>
+            <div className="mt-1">
+              <WikipediaPreview title={target.scientificName} />
+            </div>
           </div>
 
           {/* Badges */}
@@ -114,12 +168,27 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose }: Pro
             <span className="px-3 py-1 rounded-full text-xs font-semibold bg-spore-100 text-spore-700">
               {ECOLOGY_ICON[target.ecology]} {target.ecology.charAt(0).toUpperCase() + target.ecology.slice(1)}
             </span>
+            <span className={`px-3 py-1 rounded-full text-xs font-semibold ${DIFFICULTY_CLS[target.difficulty]}`}>
+              {target.difficulty.charAt(0).toUpperCase() + target.difficulty.slice(1)}
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-spore-100 text-spore-700">
+              Rarity {target.rarity}/100
+            </span>
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-spore-100 text-spore-700">
+              Fame {target.fame}/100
+            </span>
           </div>
 
           {/* Full taxonomy tree */}
           <div className="bg-spore-50 rounded-xl p-4">
             <p className="text-xs font-semibold text-spore-500 mb-2 uppercase tracking-wide">Phylogeny</p>
-            <PhylogenyTree target={target} revealedRanks={allRanks} showAll />
+            <PhylogenyTree
+              target={target}
+              revealedRanks={allRanksSet}
+              hintRevealedRanks={emptySet}
+              guesses={guesses}
+              showAll
+            />
           </div>
 
           {/* Habitat & range */}
@@ -152,19 +221,31 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose }: Pro
 
           {/* Share + close */}
           <div className="flex gap-3">
-            <button
-              onClick={copyShare}
-              className="flex-1 bg-myco-500 hover:bg-myco-600 text-white font-semibold py-3 rounded-xl transition-colors text-sm"
-            >
-              Copy results 📋
-            </button>
+            {mode === "daily" && (
+              <button
+                onClick={copyShare}
+                className="flex-1 bg-myco-500 hover:bg-myco-600 text-white font-semibold py-3 rounded-xl transition-colors text-sm"
+              >
+                Copy results 📋
+              </button>
+            )}
             <button
               onClick={onClose}
-              className="px-5 py-3 rounded-xl border border-spore-200 text-spore-600 hover:bg-spore-50 text-sm font-medium transition-colors"
+              className="flex-1 py-3 rounded-xl border border-spore-200 text-spore-600 hover:bg-spore-50 text-sm font-medium transition-colors"
             >
               Close
             </button>
           </div>
+
+          {/* Practice game CTA (shown after daily game) */}
+          {mode === "daily" && onPlayPractice && (
+            <button
+              onClick={() => { onClose(); onPlayPractice(); }}
+              className="w-full py-3 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm border border-amber-200 hover:bg-amber-200 transition-colors"
+            >
+              Play a practice game 🍄
+            </button>
+          )}
 
           {/* Image attribution */}
           <p className="text-center text-xs text-spore-400">{target.imageAttribution}</p>

@@ -1,26 +1,34 @@
-import type { GameStatus, Guess } from "../types";
+import type { GameStatus, Guess, Rank } from "../types";
 import { todayKey } from "./daily";
 
 interface SavedState {
   guesses: Guess[];
   status: GameStatus;
+  hintsUsed: number;
+  hintRevealedRanksList: string[];
 }
 
 const PREFIX = "metafunga-";
 
-export function loadState(): SavedState | null {
+export function loadState(key?: string): SavedState | null {
   try {
-    const raw = localStorage.getItem(PREFIX + todayKey());
+    const raw = localStorage.getItem(PREFIX + (key ?? todayKey()));
     if (!raw) return null;
-    return JSON.parse(raw) as SavedState;
+    const parsed = JSON.parse(raw) as Partial<SavedState>;
+    return {
+      guesses: parsed.guesses ?? [],
+      status: parsed.status ?? "playing",
+      hintsUsed: parsed.hintsUsed ?? 0,
+      hintRevealedRanksList: parsed.hintRevealedRanksList ?? [],
+    };
   } catch {
     return null;
   }
 }
 
-export function saveState(state: SavedState): void {
+export function saveState(state: SavedState, key?: string): void {
   try {
-    localStorage.setItem(PREFIX + todayKey(), JSON.stringify(state));
+    localStorage.setItem(PREFIX + (key ?? todayKey()), JSON.stringify(state));
   } catch {
     // storage quota exceeded — fail silently
   }
@@ -38,3 +46,6 @@ export function clearOldKeys(): void {
     // ignore
   }
 }
+
+export type { SavedState };
+export type { Rank };

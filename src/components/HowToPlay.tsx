@@ -31,13 +31,31 @@ export function HowToPlay({ onClose }: Props) {
           <div>
             <p className="font-semibold text-spore-900 mb-1">Each guess:</p>
             <ul className="space-y-1 list-disc list-inside">
-              <li>Pick any fungus from the list</li>
+              <li>Type any fungus name — common name, scientific name, or alternate name</li>
               <li>
                 The tree reveals the <em>deepest shared rank</em> between your
                 guess and the target
               </li>
               <li>The photo gradually unblurs with each guess</li>
+              <li>Your guess appears as a bubble on the phylogeny tree</li>
             </ul>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-3">
+            <p className="font-semibold text-amber-900 mb-1">💡 Hints</p>
+            <p className="text-amber-800">
+              Tap the <strong>Hint</strong> button to reveal the next hidden rank.
+              Each hint costs <strong>3 guesses</strong> from your total.
+            </p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-spore-900 mb-1">Fuzzy search:</p>
+            <p>
+              Up to 2 typos are forgiven. Scientific synonyms (e.g.,{" "}
+              <em>Stropharia cubensis</em> → Psilocybe cubensis) and alternate
+              common names are also searchable.
+            </p>
           </div>
 
           <div>
@@ -59,13 +77,17 @@ export function HowToPlay({ onClose }: Props) {
             </div>
           </div>
 
-          <p>You have <strong>20 guesses</strong> per day. A new fungus appears every day.</p>
+          <p>
+            You have <strong>20 guesses</strong> (including hint penalties) per day.
+            A new fungus appears every day.
+          </p>
 
           <p className="text-spore-500 text-xs">
             Taxonomy sourced from{" "}
             <strong>Index Fungorum</strong> and <strong>NCBI Taxonomy</strong>.
             Images from <strong>iNaturalist</strong> and{" "}
             <strong>Wikimedia Commons</strong> (CC-licensed).
+            ~170 curated species spanning Basidiomycota, Ascomycota, and more.
           </p>
         </div>
       </div>

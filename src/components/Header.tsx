@@ -3,9 +3,11 @@ interface Props {
   guessCount: number;
   maxGuesses: number;
   onHelp: () => void;
+  mode: "daily" | "practice";
+  onSwitchMode: () => void;
 }
 
-export function Header({ dayNumber, guessCount, maxGuesses, onHelp }: Props) {
+export function Header({ dayNumber, guessCount, maxGuesses, onHelp, mode, onSwitchMode }: Props) {
   return (
     <header className="flex items-center justify-between px-4 py-3 border-b border-spore-200 bg-white/80 backdrop-blur-sm sticky top-0 z-40">
       <button
@@ -21,11 +23,17 @@ export function Header({ dayNumber, guessCount, maxGuesses, onHelp }: Props) {
           Metafunga
         </h1>
         <p className="text-xs text-spore-500">
-          #{dayNumber} · {guessCount}/{maxGuesses} guesses
+          {mode === "practice" ? "Practice" : `#${dayNumber}`} · {guessCount}/{maxGuesses} guesses
         </p>
       </div>
 
-      <div className="w-8" />
+      <button
+        onClick={onSwitchMode}
+        className="text-xs px-2 py-1 rounded-lg border border-spore-200 text-spore-500 hover:bg-spore-100 transition-colors"
+        title={mode === "daily" ? "Play a practice game" : "Switch to today's game"}
+      >
+        {mode === "daily" ? "Practice" : "Daily"}
+      </button>
     </header>
   );
 }
