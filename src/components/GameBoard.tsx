@@ -159,6 +159,10 @@ export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode }: Pro
           onPlayPractice={mode === "daily" ? onSwitchMode : undefined}
         />
       )}
+
+      <p className="text-center text-[10px] text-spore-400/50 py-3 pb-44 sm:pb-4 select-none">
+        Version {__BUILD_HASH__} · updated {__BUILD_DATE__}
+      </p>
     </>
   );
 }
