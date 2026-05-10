@@ -7,7 +7,12 @@ const commitHash = (() => {
   catch { return 'unknown'; }
 })();
 
-const buildDate = new Date().toUTCString();
+const buildDate = new Date().toLocaleString('en-US', {
+  timeZone: 'America/New_York',
+  month: 'short', day: 'numeric', year: 'numeric',
+  hour: 'numeric', minute: '2-digit',
+  timeZoneName: 'short',
+});
 
 // https://vite.dev/config/
 export default defineConfig({
