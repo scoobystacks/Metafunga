@@ -1,5 +1,6 @@
 import type { Guess } from "../types";
-import { matchDepth, matchDescription } from "../utils/phylogeny";
+import { matchDepth, matchDescription, wikipediaUrl } from "../utils/phylogeny";
+import { FUNGI_MAP } from "../data/fungi";
 
 interface Props {
   guesses: Guess[];
@@ -28,6 +29,12 @@ export function GuessList({ guesses, targetId }: Props) {
           ? "bg-myco-500 text-white"
           : DEPTH_COLORS[depth] ?? DEPTH_COLORS[0];
 
+        // Get the taxon value for the deepest match rank for Wikipedia link
+        const guessedFungus = FUNGI_MAP.get(guess.fungusId);
+        const matchRankValue = guess.deepestMatchRank && guessedFungus
+          ? guessedFungus.taxonomy[guess.deepestMatchRank]
+          : null;
+
         return (
           <div
             key={`${guess.fungusId}-${i}`}
@@ -40,7 +47,19 @@ export function GuessList({ guesses, targetId }: Props) {
               </span>
             </div>
             <span className="ml-2 flex-shrink-0 text-xs font-semibold">
-              {isCorrect ? "✓ Correct!" : matchDescription(guess.deepestMatchRank)}
+              {isCorrect ? "✓ Correct!" : (
+                matchRankValue ? (
+                  <a
+                    href={wikipediaUrl(matchRankValue)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:opacity-80"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {matchDescription(guess.deepestMatchRank)}
+                  </a>
+                ) : matchDescription(guess.deepestMatchRank)
+              )}
             </span>
           </div>
         );

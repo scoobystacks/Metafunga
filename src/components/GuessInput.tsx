@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { FUNGI } from "../data/fungi";
 import type { Fungus } from "../types";
+import { fuzzySearch } from "../utils/fuzzy";
 
 interface Props {
   onGuess: (fungusId: string) => void;
@@ -15,16 +16,16 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
 
-  const candidates: Fungus[] = query.trim().length >= 1
+  const trimmed = query.trim();
+
+  const candidates: Fungus[] = trimmed.length >= 1
     ? FUNGI.filter((f) => {
         if (usedIds.has(f.id)) return false;
-        const q = query.toLowerCase();
-        return (
-          f.commonName.toLowerCase().includes(q) ||
-          f.scientificName.toLowerCase().includes(q)
-        );
+        return fuzzySearch(trimmed, f);
       }).slice(0, 8)
     : [];
+
+  const showNotFound = trimmed.length >= 3 && candidates.length === 0;
 
   useEffect(() => {
     setHighlighted(0);
@@ -50,11 +51,13 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
       setHighlighted((h) => Math.max(h - 1, 0));
     } else if (e.key === "Enter") {
       e.preventDefault();
-      commit(candidates[highlighted]);
+      if (candidates[highlighted]) commit(candidates[highlighted]);
     } else if (e.key === "Escape") {
       setOpen(false);
     }
   };
+
+  const showDropdown = open && (candidates.length > 0 || showNotFound);
 
   return (
     <div className="relative w-full max-w-sm mx-auto">
@@ -78,7 +81,7 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
         />
       </div>
 
-      {open && candidates.length > 0 && (
+      {showDropdown && (
         <ul
           ref={listRef}
           className="absolute z-50 mt-1 w-full rounded-xl border border-spore-200 bg-white shadow-lg overflow-hidden"
@@ -100,6 +103,11 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
               </span>
             </li>
           ))}
+          {showNotFound && (
+            <li className="px-4 py-2.5 text-sm text-spore-400 italic select-none">
+              Not in our database
+            </li>
+          )}
         </ul>
       )}
     </div>
