@@ -3278,28 +3278,6 @@ export const FUNGI: Fungus[] = [
 
 
 
-{
-    id: "cunninghamella-elegans",
-    scientificName: "Cunninghamella elegans",
-    commonName: "Elegant Cunninghamella",
-    aliases: [],
-    synonyms: [],
-    taxonomy: { kingdom: "Fungi", phylum: "Mucoromycota", class: "Mucoromycetes", order: "Mucorales", family: "Cunninghamellaceae", genus: "Cunninghamella", species: "elegans" },
-    edibility: "inedible",
-    ecology: "saprotrophic",
-    habitat: "Soil and decaying organic matter; cosmopolitan",
-    naRange: "Widespread across warm regions of North America",
-    morphology: { capShape: "White branching sporangiophores with globose spore-bearing vesicles", gillAttachment: "None (zygomycete)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cunninghamella_elegans.jpg/400px-Cunninghamella_elegans.jpg",
-    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
-    crossSectionUrl: null,
-    gbifId: 3267698,
-    rarity: 50,
-    fame: 15,
-    difficulty: "insane",
-    funFact: "Extensively used in pharmaceutical research as a 'microbial model' of mammalian drug metabolism — it converts drugs to metabolites just as the human liver does.",
-  },
-
 
 
 {
