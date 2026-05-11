@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """
-Replaces imageUrl values in fungi.ts with iNaturalist photo URLs.
+Replaces imageUrl values in fungi.ts with Wikipedia thumbnail URLs.
 
 Run from repo root on your LOCAL machine (requires internet access):
   python3 scripts/fetch_inat_images.py
 
-iNaturalist photos are served from a stable AWS S3 CDN, so URLs won't
-break due to Wikipedia file renames/deletions.
+Uses Wikipedia's REST API which is public and requires no auth token.
 """
 import re, json, time, urllib.request, urllib.parse
 
 FUNGI_FILE = "src/data/fungi.ts"
-USER_AGENT = "Metafunga/3.0 (https://github.com/scoobystacks/Metafunga)"
+USER_AGENT = "Metafunga/3.0 (https://github.com/scoobystacks/Metafunga; bot@scoobystacks.com)"
 
 
 def extract_entries(ts_source: str) -> list[tuple[str, str]]:
@@ -21,10 +20,11 @@ def extract_entries(ts_source: str) -> list[tuple[str, str]]:
     return list(zip(ids, names))
 
 
-def inat_photo(scientific_name: str) -> tuple[str, str] | None:
+def wiki_photo(scientific_name: str) -> tuple[str, str] | None:
     """Return (photo_url, attribution) or None."""
-    q = urllib.parse.quote(scientific_name)
-    url = f"https://api.inaturalist.org/v1/taxa/search?q={q}&limit=3"
+    title = scientific_name.replace(" ", "_")
+    encoded = urllib.parse.quote(title)
+    url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{encoded}"
     req = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
         "Accept": "application/json",
@@ -32,19 +32,14 @@ def inat_photo(scientific_name: str) -> tuple[str, str] | None:
     try:
         with urllib.request.urlopen(req, timeout=12) as resp:
             data = json.loads(resp.read())
-        for taxon in data.get("results", []):
-            # Match on exact scientific name to avoid wrong-taxon results
-            if taxon.get("name", "").lower() != scientific_name.lower():
-                continue
-            photo = taxon.get("default_photo")
-            if not photo:
-                continue
-            photo_url = photo.get("medium_url") or photo.get("url")
-            if not photo_url:
-                continue
-            # Build attribution from photo attribution field
-            attrib = photo.get("attribution", "© iNaturalist contributors / CC BY")
-            return photo_url, attrib
+        thumb = data.get("thumbnail") or data.get("originalimage")
+        if not thumb:
+            return None
+        photo_url = thumb.get("source")
+        if not photo_url:
+            return None
+        attrib = f"© Wikimedia Commons contributors / CC BY-SA"
+        return photo_url, attrib
     except Exception as e:
         print(f"  WARN {scientific_name}: {e}")
     return None
@@ -98,7 +93,7 @@ def main() -> None:
     id_to_inat: dict[str, tuple[str, str]] = {}
     for i, (fid, name) in enumerate(entries):
         print(f"[{i+1}/{len(entries)}] {name} ...", end=" ", flush=True)
-        result = inat_photo(name)
+        result = wiki_photo(name)
         if result:
             id_to_inat[fid] = result
             print(f"OK")
