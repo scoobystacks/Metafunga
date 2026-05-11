@@ -11,21 +11,14 @@ USER_AGENT = "Metafunga/3.0 (https://github.com/scoobystacks/Metafunga; bot@scoo
 
 # Species that still have old/broken images
 MISSING = [
-    "Sparassis radicata",
-    "Lentinula edodes",
-    "Ustilago maydis",
-    "Puccinia graminis",
-    "Amanita rubescens",
-    "Cantharellus tubaeformis",
-    "Leucoagaricus leucothites",
-    "Lycoperdon pyriforme",
-    "Lepista nuda",
-    "Polyporus brumalis",
-    "Daedalea quercina",
-    "Hapalopilus nidulans",
-    "Lactarius piperatus",
-    "Lactarius volemus",
-    "Cunninghamella elegans",
+    "Gyromitra caroliniana",
+    "Laetiporus cincinnatus",
+    "Morchella americana",
+    "Cantharellus cinnabarinus",
+    "Imleria badia",
+    "Ganoderma tsugae",
+    "Tylopilus felleus",
+    "Laccaria amethystina",
 ]
 
 
