@@ -7,7 +7,7 @@ Run from repo root on your LOCAL machine (requires internet access):
 
 Uses Wikipedia's REST API which is public and requires no auth token.
 """
-import re, json, time, urllib.request, urllib.parse
+import re, json, time, subprocess, urllib.parse
 
 FUNGI_FILE = "src/data/fungi.ts"
 USER_AGENT = "Metafunga/3.0 (https://github.com/scoobystacks/Metafunga; bot@scoobystacks.com)"
@@ -21,7 +21,7 @@ def extract_entries(ts_source: str) -> list[tuple[str, str]]:
 
 
 def wiki_photo(scientific_name: str) -> tuple[str, str] | None:
-    """Return (photo_url, attribution) or None."""
+    """Return (photo_url, attribution) or None. Uses curl to avoid TLS fingerprint blocks."""
     title = scientific_name.replace(" ", "_")
     encoded = urllib.parse.quote(title)
     url = (
@@ -29,13 +29,12 @@ def wiki_photo(scientific_name: str) -> tuple[str, str] | None:
         f"?action=query&titles={encoded}&prop=pageimages"
         f"&format=json&pithumbsize=500"
     )
-    req = urllib.request.Request(url, headers={
-        "User-Agent": USER_AGENT,
-        "Accept": "application/json",
-    })
     try:
-        with urllib.request.urlopen(req, timeout=12) as resp:
-            data = json.loads(resp.read())
+        result = subprocess.run(
+            ["curl", "-s", "--max-time", "12", "-A", USER_AGENT, url],
+            capture_output=True, text=True, timeout=15
+        )
+        data = json.loads(result.stdout)
         pages = data.get("query", {}).get("pages", {})
         for page in pages.values():
             thumb = page.get("thumbnail")
