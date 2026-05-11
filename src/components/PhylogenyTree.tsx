@@ -1,16 +1,10 @@
 import { useState } from "react";
 import type { Fungus, Guess, Rank } from "../types";
 import { RANKS } from "../types";
-import { deepestRevealedRank, wikipediaUrl } from "../utils/phylogeny";
+import { deepestRevealedRank, wikipediaUrl, computeGuessClusters, rankLabel } from "../utils/phylogeny";
+import type { GuessCluster } from "../utils/phylogeny";
 import { WikipediaPreview } from "./WikipediaPreview";
-
-function rankLabel(rank: Rank): string {
-  const labels: Record<Rank, string> = {
-    kingdom: "Kingdom", phylum: "Phylum", class: "Class",
-    order: "Order", family: "Family", genus: "Genus", species: "Species",
-  };
-  return labels[rank];
-}
+import { FUNGI_MAP } from "../data/fungi";
 
 interface Props {
   target: Fungus;
@@ -31,7 +25,7 @@ const MATCH_COLORS: Record<number, string> = {
   6: "bg-myco-100 text-myco-800 border-myco-200",
 };
 
-const INDENT = 14; // px indent per rank level
+const INDENT = 10; // px indent per rank level
 
 export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesses, showAll = false }: Props) {
   const [expandedRank, setExpandedRank] = useState<Rank | null>(null);
@@ -40,12 +34,26 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
   const deepest = deepestRevealedRank(effectiveRevealed);
   const deepestIndex = RANKS.indexOf(deepest);
 
-  // Map rank → guesses whose deepest match is exactly that rank
+  // Compute dead-end cluster branches for wrong guesses
+  const clusters = computeGuessClusters(guesses, target, FUNGI_MAP);
+  const clusteredIds = new Set(clusters.flatMap((c) => c.guessFungusIds));
+
+  // Map rank → non-clustered guesses whose deepest match is exactly that rank
   const guessesByRank = new Map<Rank | "none", Guess[]>();
   guessesByRank.set("none", []);
   for (const rank of RANKS) guessesByRank.set(rank, []);
   for (const guess of guesses) {
+    if (clusteredIds.has(guess.fungusId)) continue;
     guessesByRank.get(guess.deepestMatchRank ?? "none")!.push(guess);
+  }
+
+  // Map attachRank → clusters
+  const clustersByAttachRank = new Map<Rank, GuessCluster[]>();
+  for (const cluster of clusters) {
+    if (!clustersByAttachRank.has(cluster.attachRank)) {
+      clustersByAttachRank.set(cluster.attachRank, []);
+    }
+    clustersByAttachRank.get(cluster.attachRank)!.push(cluster);
   }
 
   // Revealed ranks + the single next-unrevealed rank (shows "???")
@@ -66,6 +74,7 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
         const isDeepest = rank === deepest && isRevealed;
         const isExpanded = expandedRank === rank;
         const indentPx = rankIndex * INDENT;
+        const clustersHere = clustersByAttachRank.get(rank) ?? [];
 
         return (
           <div key={rank}>
@@ -75,9 +84,7 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
                 className="flex items-stretch"
                 style={{ marginLeft: (rankIndex - 1) * INDENT, height: 14 }}
               >
-                {/* vertical portion of the L */}
                 <div className="border-l-2 border-spore-200" style={{ width: 10 }} />
-                {/* horizontal elbow of the L */}
                 <div className="border-b-2 border-spore-200 self-end" style={{ width: INDENT }} />
               </div>
             )}
@@ -88,7 +95,7 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
               {isRevealed ? (
                 <button
                   onClick={() => setExpandedRank(isExpanded ? null : rank)}
-                  className={`flex flex-col items-start px-2.5 py-1.5 rounded-xl border transition-all cursor-pointer select-none flex-shrink-0 min-w-[108px] max-w-[140px] text-left ${
+                  className={`flex flex-col items-start px-2.5 py-1.5 rounded-xl border transition-all cursor-pointer select-none w-fit min-w-[90px] text-left ${
                     isDeepest
                       ? "bg-amber-200 border-amber-400 text-amber-900 ring-1 ring-amber-400 ring-offset-1"
                       : "bg-amber-100 border-amber-300 text-amber-900"
@@ -97,13 +104,12 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
                   <span className="text-[8px] font-bold uppercase tracking-widest text-amber-500 leading-none mb-0.5">
                     {rankLabel(rank)}{isHintRevealed ? " 💡" : ""}
                   </span>
-                  <span className="text-[11px] font-bold leading-tight italic">
+                  <span className="text-[10px] font-bold leading-tight italic">
                     {value}
                   </span>
-                  <span className="text-[8px] text-amber-400 mt-0.5 leading-none">tap to learn ↗</span>
                 </button>
               ) : (
-                <div className="flex flex-col items-start px-2.5 py-1.5 rounded-xl border border-spore-200 bg-spore-100 flex-shrink-0 min-w-[108px]">
+                <div className="flex flex-col items-start px-2.5 py-1.5 rounded-xl border border-spore-200 bg-spore-100 w-fit min-w-[90px]">
                   <span className="text-[8px] font-bold uppercase tracking-widest text-spore-400 leading-none mb-0.5">
                     {rankLabel(rank)}
                   </span>
@@ -111,7 +117,7 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
                 </div>
               )}
 
-              {/* Guesses branching right */}
+              {/* Non-clustered guess bubbles */}
               {guessesHere.length > 0 && (
                 <div className="flex items-center gap-1 flex-wrap pt-1">
                   <div className="w-3 h-px bg-spore-200 flex-shrink-0 mt-3" />
@@ -122,6 +128,29 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
                   </div>
                 </div>
               )}
+
+              {/* Dead-end cluster branches */}
+              {isRevealed && clustersHere.map((cluster) => (
+                <div key={`${cluster.rank}:${cluster.value}`} className="flex items-start gap-0.5 pt-1">
+                  <div className="w-3 h-px bg-stone-300 flex-shrink-0 mt-[14px]" />
+                  <div className="flex flex-col gap-1">
+                    <div className="flex flex-col items-start px-2 py-1 rounded-lg border border-dashed border-stone-400 bg-stone-100 text-stone-700 w-fit min-w-[80px]">
+                      <span className="text-[7px] font-bold uppercase tracking-widest text-stone-400 leading-none mb-0.5">
+                        {rankLabel(cluster.rank)}
+                      </span>
+                      <span className="text-[9px] font-semibold italic leading-tight">
+                        {cluster.value}
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-1 ml-1">
+                      {cluster.guessFungusIds.map((id) => {
+                        const g = guesses.find((gg) => gg.fungusId === id);
+                        return g ? <GuessBubble key={id} guess={g} /> : null;
+                      })}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* Wikipedia inline preview */}

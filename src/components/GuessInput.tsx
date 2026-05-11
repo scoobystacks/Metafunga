@@ -12,7 +12,7 @@ interface Props {
 export function GuessInput({ onGuess, usedIds, disabled }: Props) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
-  const [highlighted, setHighlighted] = useState(0);
+  const [highlighted, setHighlighted] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
 
@@ -28,7 +28,7 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
   const showNotFound = trimmed.length >= 3 && candidates.length === 0;
 
   useEffect(() => {
-    setHighlighted(0);
+    setHighlighted(-1);
   }, [query]);
 
   const commit = useCallback(
@@ -48,10 +48,10 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
       setHighlighted((h) => Math.min(h + 1, candidates.length - 1));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
-      setHighlighted((h) => Math.max(h - 1, 0));
+      setHighlighted((h) => Math.max(h - 1, -1));
     } else if (e.key === "Enter") {
       e.preventDefault();
-      if (candidates[highlighted]) commit(candidates[highlighted]);
+      if (highlighted >= 0 && candidates[highlighted]) commit(candidates[highlighted]);
     } else if (e.key === "Escape") {
       setOpen(false);
     }

@@ -30,9 +30,10 @@ interface Props {
   mode: "daily" | "practice";
   onHelp: () => void;
   onSwitchMode: () => void;
+  onReset?: () => void;
 }
 
-export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode }: Props) {
+export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode, onReset }: Props) {
   // Practice games are ephemeral (storageKey = ""), daily uses localStorage
   const storageKey = mode === "practice" ? "" : undefined;
   const { state, submitGuess, useHint, hintDisabled, maxGuesses } = useGame(target, dayNumber, storageKey);
@@ -61,9 +62,10 @@ export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode }: Pro
         onHelp={onHelp}
         mode={mode}
         onSwitchMode={onSwitchMode}
+        onReset={onReset}
       />
 
-      <main className="flex flex-col items-center gap-5 px-4 py-5 pb-40 sm:pb-8 max-w-md mx-auto w-full">
+      <main className="flex flex-col items-center gap-5 px-4 py-5 pb-24 sm:pb-8 max-w-md mx-auto w-full">
         {mode === "practice" && (
           <div className="w-full text-center text-xs bg-amber-50 border border-amber-200 text-amber-700 rounded-xl py-1.5 px-3 font-medium">
             Practice mode — results won't be saved
@@ -156,6 +158,7 @@ export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode }: Pro
           onClose={() => setShowResult(false)}
           mode={mode}
           onPlayPractice={mode === "daily" ? onSwitchMode : undefined}
+          onReset={onReset}
         />
       )}
 

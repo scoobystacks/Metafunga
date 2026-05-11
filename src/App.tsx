@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState } from "react";
 import { useDailyFungus } from "./hooks/useDailyFungus";
 import { GameBoard } from "./components/GameBoard";
 import { HowToPlay } from "./components/HowToPlay";
-import { clearOldKeys } from "./utils/storage";
+import { clearOldKeys, clearState } from "./utils/storage";
 import { ACTIVE_FUNGI, FUNGI } from "./data/fungi";
 import type { Difficulty } from "./types";
 
@@ -39,6 +39,7 @@ export default function App() {
   const [mode, setMode] = useState<"daily" | "practice">("daily");
   const [showHelp, setShowHelp] = useState(false);
   const [showDifficultyPicker, setShowDifficultyPicker] = useState(false);
+  const [boardKey, setBoardKey] = useState(0);
 
   const [practiceState, setPracticeState] = useState<{
     fungus: typeof FUNGI[0];
@@ -63,6 +64,11 @@ export default function App() {
     }
   }, [mode]);
 
+  const handleReset = useCallback(() => {
+    clearState();
+    setBoardKey((k) => k + 1);
+  }, []);
+
   const target = mode === "practice" && practiceState
     ? practiceState.fungus
     : dailyFungus;
@@ -77,12 +83,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-spore-50 flex flex-col">
       <GameBoard
-        key={mode === "practice" ? practiceState?.seed ?? "practice" : "daily"}
+        key={mode === "practice" ? `practice-${practiceState?.seed ?? 0}` : `daily-${boardKey}`}
         target={target}
         dayNumber={effectiveDayNumber}
         mode={mode}
         onHelp={() => setShowHelp(true)}
         onSwitchMode={handleSwitchMode}
+        onReset={mode === "daily" ? handleReset : undefined}
       />
       {showHelp && <HowToPlay onClose={() => setShowHelp(false)} />}
 
