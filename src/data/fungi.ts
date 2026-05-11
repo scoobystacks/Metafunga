@@ -3068,7 +3068,7 @@ export const FUNGI: Fungus[] = [
     habitat: "Freshwater and moist soil; aquatic or semi-aquatic environments",
     naRange: "Tropical and subtropical regions of North America",
     morphology: { capShape: "Microscopic branching filamentous thallus with alternating diploid and haploid generations", gillAttachment: "None (chytrid-like)", sporeColor: "N/A", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Allomyces.jpg/400px-Allomyces.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Allomyces.jpg/400px-Allomyces.jpg",
     imageAttribution: "© Wikimedia Commons / Public Domain",
     crossSectionUrl: null,
     gbifId: 3267540,
