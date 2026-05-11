@@ -84,7 +84,7 @@ export function GuessInput({ onGuess, usedIds, disabled }: Props) {
       {showDropdown && (
         <ul
           ref={listRef}
-          className="absolute z-50 mt-1 w-full rounded-xl border border-spore-200 bg-white shadow-lg overflow-hidden"
+          className="absolute z-50 bottom-full mb-1 w-full rounded-xl border border-spore-200 bg-white shadow-lg overflow-hidden"
         >
           {candidates.map((f, i) => (
             <li

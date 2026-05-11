@@ -39,15 +39,17 @@ export function CladePreviews({ target, revealedRanks, dayNumber }: Props) {
       </p>
       <div className="grid grid-cols-3 gap-2">
         {previews.map((f) => (
-          <div key={f.id} className="relative group aspect-square rounded-lg overflow-hidden bg-spore-100">
+          <div key={f.id} className="relative group aspect-square rounded-lg overflow-hidden bg-spore-100 flex items-center justify-center">
             <img
               src={f.imageUrl}
               alt={f.commonName}
               className="w-full h-full object-cover"
               loading="lazy"
+              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
             />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end justify-center opacity-0 group-hover:opacity-100">
-              <span className="text-white text-[10px] font-semibold text-center p-1 leading-tight">
+            {/* Always-visible label at bottom */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-1 py-1">
+              <span className="text-white text-[9px] font-medium text-center leading-tight line-clamp-2 block">
                 {f.commonName}
               </span>
             </div>
