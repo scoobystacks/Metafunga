@@ -78,15 +78,16 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
 
         return (
           <div key={rank}>
-            {/* L-shaped connector from parent above */}
+            {/* L-connector: vertical at parent's x, horizontal kick to child's x */}
             {renderIndex > 0 && (
               <div
-                className="flex items-stretch"
-                style={{ marginLeft: (rankIndex - 1) * INDENT, height: 14 }}
-              >
-                <div className="border-l-2 border-spore-200" style={{ width: 10 }} />
-                <div className="border-b-2 border-spore-200 self-end" style={{ width: INDENT }} />
-              </div>
+                className="border-l-2 border-b-2 border-spore-200"
+                style={{
+                  marginLeft: (rankIndex - 1) * INDENT,
+                  width: INDENT,
+                  height: 20,
+                }}
+              />
             )}
 
             {/* Node row */}
