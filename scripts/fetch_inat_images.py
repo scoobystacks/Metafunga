@@ -24,7 +24,11 @@ def wiki_photo(scientific_name: str) -> tuple[str, str] | None:
     """Return (photo_url, attribution) or None."""
     title = scientific_name.replace(" ", "_")
     encoded = urllib.parse.quote(title)
-    url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{encoded}"
+    url = (
+        f"https://en.wikipedia.org/w/api.php"
+        f"?action=query&titles={encoded}&prop=pageimages"
+        f"&format=json&pithumbsize=500"
+    )
     req = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
         "Accept": "application/json",
@@ -32,14 +36,11 @@ def wiki_photo(scientific_name: str) -> tuple[str, str] | None:
     try:
         with urllib.request.urlopen(req, timeout=12) as resp:
             data = json.loads(resp.read())
-        thumb = data.get("thumbnail") or data.get("originalimage")
-        if not thumb:
-            return None
-        photo_url = thumb.get("source")
-        if not photo_url:
-            return None
-        attrib = f"© Wikimedia Commons contributors / CC BY-SA"
-        return photo_url, attrib
+        pages = data.get("query", {}).get("pages", {})
+        for page in pages.values():
+            thumb = page.get("thumbnail")
+            if thumb and thumb.get("source"):
+                return thumb["source"], "© Wikimedia Commons contributors / CC BY-SA"
     except Exception as e:
         print(f"  WARN {scientific_name}: {e}")
     return None
