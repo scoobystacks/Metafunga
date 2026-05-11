@@ -1,7 +1,6 @@
 import type { Fungus } from "../types";
 
 export const FUNGI: Fungus[] = [
-{ Fungus }
 {
     id: "amanita-muscaria",
     scientificName: "Amanita muscaria",

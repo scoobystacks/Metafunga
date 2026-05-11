@@ -101,8 +101,11 @@ def main() -> None:
             print("NOT FOUND — keeping existing URL")
         time.sleep(0.4)
 
-    # Patch the source file
-    blocks = split_entries(source)
+    # Patch the source file — only parse the array body, not the full file
+    array_match = re.search(r'export const FUNGI: Fungus\[\] = \[', source)
+    footer_match = re.search(r'\];\s*\nexport const FUNGI_MAP', source)
+    array_body = source[array_match.end():footer_match.start()]
+    blocks = split_entries(array_body)
     changed = 0
     patched: list[str] = []
     for block in blocks:
@@ -113,8 +116,6 @@ def main() -> None:
             changed += 1
         patched.append(block)
 
-    array_match = re.search(r'export const FUNGI: Fungus\[\] = \[', source)
-    footer_match = re.search(r'\];\s*\nexport const FUNGI_MAP', source)
     header = source[:array_match.end()]
     footer = source[footer_match.start():]
     new_source = header + '\n' + '\n'.join(patched) + footer
