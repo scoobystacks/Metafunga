@@ -178,15 +178,13 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
 function GuessBubble({ guess }: { guess: Guess }) {
   const depth = guess.deepestMatchRank === null ? 0 : RANKS.indexOf(guess.deepestMatchRank);
   const colorClass = MATCH_COLORS[depth] ?? MATCH_COLORS[0];
-  const name = guess.commonName;
-  const display = name.length > 11 ? name.slice(0, 10) + "…" : name;
 
   return (
     <div
-      className={`text-[9px] font-medium px-1.5 py-0.5 rounded-lg border text-center leading-tight whitespace-nowrap ${colorClass}`}
+      className={`text-[9px] font-medium px-1.5 py-0.5 rounded-lg border text-center leading-tight break-words max-w-[88px] ${colorClass}`}
       title={`${guess.commonName} (${guess.scientificName})`}
     >
-      {display}
+      {guess.commonName}
     </div>
   );
 }
