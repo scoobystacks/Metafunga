@@ -5,6 +5,7 @@ const DIFFICULTY_CLS: Record<Difficulty, string> = {
   easy:   "bg-myco-100 text-myco-800 border-myco-200",
   medium: "bg-amber-100 text-amber-800 border-amber-200",
   hard:   "bg-red-100 text-red-800 border-red-200",
+  insane: "bg-purple-100 text-purple-900 border-purple-300",
 };
 
 function DifficultyBadge({ difficulty }: { difficulty: Difficulty }) {
@@ -116,15 +117,13 @@ export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode }: Pro
           )}
         </div>
 
-        {/* Clade previews */}
+        {/* Clade previews — only shown once a rank deeper than kingdom is known */}
         {!gameOver && (
-          <div className="w-full bg-white rounded-2xl shadow-sm border border-spore-100 p-4">
-            <CladePreviews
-              target={target}
-              revealedRanks={state.revealedRanks}
-              dayNumber={dayNumber}
-            />
-          </div>
+          <CladePreviews
+            target={target}
+            revealedRanks={state.revealedRanks}
+            dayNumber={dayNumber}
+          />
         )}
 
         {/* Guess history */}
@@ -161,7 +160,7 @@ export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode }: Pro
       )}
 
       <p className="text-center text-[10px] text-spore-400/50 py-3 pb-44 sm:pb-4 select-none">
-        Version {__BUILD_HASH__} · updated {__BUILD_DATE__}
+        v{__APP_VERSION__} · updated {__BUILD_DATE__}
       </p>
     </>
   );

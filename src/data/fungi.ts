@@ -23,6 +23,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The white warts on its cap are remnants of a universal veil that enclosed the entire mushroom when young.",
   },
 
+
 {
     id: "amanita-phalloides",
     scientificName: "Amanita phalloides",
@@ -44,6 +45,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Responsible for the majority of fatal mushroom poisonings worldwide; amatoxins destroy liver and kidney cells over several days.",
   },
+
 
 {
     id: "amanita-bisporigera",
@@ -67,6 +69,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Its pure white color makes it dangerously easy to confuse with edible species like button mushrooms or puffballs.",
   },
 
+
 {
     id: "amanita-caesarea",
     scientificName: "Amanita caesarea",
@@ -88,6 +91,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Prized by Roman emperors — its name honors Julius Caesar and it was reportedly a favorite dish of Emperor Claudius.",
   },
+
 
 {
     id: "agaricus-campestris",
@@ -111,6 +115,7 @@ export const FUNGI: Fungus[] = [
     funFact: "A classic wild edible prized for centuries; its gills start pale pink and darken to chocolate-brown as the spores mature.",
   },
 
+
 {
     id: "agaricus-bisporus",
     scientificName: "Agaricus bisporus",
@@ -132,6 +137,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "White button, cremini, and portobello mushrooms are all the same species at different stages of maturity and cultivar selection.",
   },
+
 
 {
     id: "coprinus-comatus",
@@ -155,6 +161,7 @@ export const FUNGI: Fungus[] = [
     funFact: "It must be eaten within hours of picking because it self-digests into black ink — a process called autodigestion — to disperse its spores.",
   },
 
+
 {
     id: "coprinellus-micaceus",
     scientificName: "Coprinellus micaceus",
@@ -176,6 +183,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The mica-like sparkling granules on young caps are veil remnants that give this mushroom a glittery appearance after rain.",
   },
+
 
 {
     id: "marasmius-oreades",
@@ -199,6 +207,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Fairy rings can expand outward for centuries; some rings in Europe are estimated to be over 700 years old.",
   },
 
+
 {
     id: "armillaria-mellea",
     scientificName: "Armillaria mellea",
@@ -220,6 +229,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Honey mushrooms spread through wood via black root-like rhizomorphs; individual clones can cover acres of forest, slowly killing host trees over decades.",
   },
+
 
 {
     id: "hypholoma-fasciculare",
@@ -243,6 +253,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Its intensely bitter taste is a reliable warning — even small amounts cause gastrointestinal distress.",
   },
 
+
 {
     id: "psilocybe-cubensis",
     scientificName: "Psilocybe cubensis",
@@ -264,6 +275,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Psilocybin, its active compound, is being researched as a treatment for depression, PTSD, and addiction.",
   },
+
 
 {
     id: "gymnopilus-junonius",
@@ -287,6 +299,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Despite its massive, impressive size, it is bitter and contains psilocybin in some populations — it is not recommended for eating.",
   },
 
+
 {
     id: "boletus-edulis",
     scientificName: "Boletus edulis",
@@ -308,6 +321,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "One of the world's most prized edible fungi, traded dried in markets as 'cèpes' in France and 'porcini' in Italy.",
   },
+
 
 {
     id: "suillus-luteus",
@@ -331,6 +345,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Its slimy cap cuticle must be peeled before cooking to avoid a laxative effect in some people.",
   },
 
+
 {
     id: "leccinum-scabrum",
     scientificName: "Leccinum scabrum",
@@ -352,6 +367,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Always found near birch trees due to its obligate mycorrhizal partnership — it cannot grow without a birch host.",
   },
+
 
 {
     id: "pisolithus-arhizus",
@@ -375,6 +391,7 @@ export const FUNGI: Fungus[] = [
     funFact: "It is a premier tool for reforestation — its spores are used to inoculate tree seedlings with beneficial mycorrhizal fungi.",
   },
 
+
 {
     id: "cantharellus-cibarius",
     scientificName: "Cantharellus cibarius",
@@ -396,6 +413,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Their forked blunt ridges are a key ID feature; false chanterelles (Hygrophoropsis) have true sharp gills.",
   },
+
 
 {
     id: "craterellus-cornucopioides",
@@ -419,6 +437,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Their dark color makes them notoriously hard to spot on a forest floor — foragers call them 'poor man's truffle' for their rich flavor.",
   },
 
+
 {
     id: "hydnum-repandum",
     scientificName: "Hydnum repandum",
@@ -440,6 +459,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The hedgehog mushroom has no dangerous lookalikes — no toxic mushroom bears teeth on its underside like this species does.",
   },
+
 
 {
     id: "clavulina-cristata",
@@ -463,6 +483,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Often parasitized by the ascomycete Helminthosphaeria clavariarum, which turns its tips grey-brown.",
   },
 
+
 {
     id: "trametes-versicolor",
     scientificName: "Trametes versicolor",
@@ -484,6 +505,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "PSK (polysaccharide-K) derived from this mushroom is an approved cancer drug in Japan and extensively studied worldwide.",
   },
+
 
 {
     id: "ganoderma-lucidum",
@@ -507,6 +529,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Revered for over 2,000 years in Chinese medicine as the 'mushroom of immortality'; now studied for immune-modulating compounds.",
   },
 
+
 {
     id: "fomitopsis-pinicola",
     scientificName: "Fomitopsis pinicola",
@@ -528,6 +551,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The bracket of this fungus can persist for 30–80 years, growing a new tube layer each season.",
   },
+
 
 {
     id: "grifola-frondosa",
@@ -551,6 +575,7 @@ export const FUNGI: Fungus[] = [
     funFact: "A single fruiting body can weigh over 100 pounds; in Japan it is known as 'maitake' — the dancing mushroom.",
   },
 
+
 {
     id: "laetiporus-sulphureus",
     scientificName: "Laetiporus sulphureus",
@@ -572,6 +597,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Its fibrous texture genuinely resembles cooked chicken breast and can be used as a meat substitute in many dishes.",
   },
+
 
 {
     id: "inonotus-obliquus",
@@ -595,6 +621,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The visible black mass is not the fruiting body but a sterile conk; the actual fruiting body is rarely seen under the bark.",
   },
 
+
 {
     id: "sparassis-radicata",
     scientificName: "Sparassis radicata",
@@ -616,6 +643,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "A single fruiting body can weigh up to 30 pounds; it returns to the same spot each year from a persistent root-like structure.",
   },
+
 
 {
     id: "russula-emetica",
@@ -639,6 +667,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Russulas have uniquely brittle gills made of round cells (sphaerocysts) rather than elongated ones — they snap cleanly like chalk.",
   },
 
+
 {
     id: "russula-xerampelina",
     scientificName: "Russula xerampelina",
@@ -660,6 +689,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Smells distinctly of shellfish — like cooked crab or shrimp — making it one of the most uniquely scented mushrooms.",
   },
+
 
 {
     id: "lactarius-deliciosus",
@@ -683,6 +713,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Lactarius fungi 'bleed' a milky latex when cut; in L. deliciosus this milk is carrot-orange and stains the flesh green with age.",
   },
 
+
 {
     id: "lactarius-indigo",
     scientificName: "Lactarius indigo",
@@ -704,6 +735,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The only blue mushroom you can reliably eat; its indigo-blue latex comes from unique sesquiterpene pigments — unrelated to any other known blue compound in nature.",
   },
+
 
 {
     id: "hypomyces-lactifluorum",
@@ -727,6 +759,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Technically the lobster mushroom is two organisms — the ascomycete parasite Hypomyces attacking a Russula or Lactarius host.",
   },
 
+
 {
     id: "phallus-impudicus",
     scientificName: "Phallus impudicus",
@@ -748,6 +781,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Its rank odor mimics rotting flesh to attract flies and beetles that disperse its spores; it can be detected from 30 meters away.",
   },
+
 
 {
     id: "clathrus-ruber",
@@ -771,6 +805,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Possibly the most alien-looking fungus in temperate regions — the red cage structure is designed to display its spore mass to insects.",
   },
 
+
 {
     id: "lycoperdon-perlatum",
     scientificName: "Lycoperdon perlatum",
@@ -792,6 +827,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Only eat puffballs when the interior is pure white — once they turn yellow or show a developing mushroom inside, they are past their prime.",
   },
+
 
 {
     id: "calvatia-gigantea",
@@ -815,6 +851,7 @@ export const FUNGI: Fungus[] = [
     funFact: "A single giant puffball contains an estimated 7 trillion spores — if each one germinated, they would cover the earth twice over.",
   },
 
+
 {
     id: "scleroderma-citrinum",
     scientificName: "Scleroderma citrinum",
@@ -836,6 +873,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Dangerous to confuse with edible puffballs — its interior is always dark purple (puffballs are white inside when edible).",
   },
+
 
 {
     id: "cortinarius-violaceus",
@@ -859,6 +897,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Cortinarius is the largest genus of fungi with over 2,000 species; several species in the Orellani group produce orellanine, a kidney-destroying toxin that may take weeks to cause symptoms.",
   },
 
+
 {
     id: "tricholoma-magnivelare",
     scientificName: "Tricholoma magnivelare",
@@ -880,6 +919,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Highly prized in Japan as the world's most expensive mushroom; its spicy cinnamon-like fragrance is immediately distinctive.",
   },
+
 
 {
     id: "pleurotus-ostreatus",
@@ -903,6 +943,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Oyster mushrooms are carnivorous — they paralyze nematodes with a toxin from specialized cells and digest them for extra nitrogen.",
   },
 
+
 {
     id: "lentinula-edodes",
     scientificName: "Lentinula edodes",
@@ -924,6 +965,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Shiitake contain lentinan, an immunostimulant approved as an antitumor drug in Japan; they are the second most cultivated mushroom globally.",
   },
+
 
 {
     id: "tremella-mesenterica",
@@ -947,6 +989,7 @@ export const FUNGI: Fungus[] = [
     funFact: "It is not actually saprotrophic — it parasitizes the mycelium of crust fungi (Peniophora) that are decomposing the wood it appears on.",
   },
 
+
 {
     id: "auricularia-auricula-judae",
     scientificName: "Auricularia auricula-judae",
@@ -968,6 +1011,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The primary fungus in hot-and-sour soup and many Asian dishes; it is cultivated globally and has anticoagulant properties.",
   },
+
 
 {
     id: "exidia-glandulosa",
@@ -991,6 +1035,7 @@ export const FUNGI: Fungus[] = [
     funFact: "In dry weather it shrivels to a nearly invisible crust and can resurrect itself with rain, earning it the name 'witches' butter'.",
   },
 
+
 {
     id: "dacrymyces-chrysospermus",
     scientificName: "Dacrymyces chrysospermus",
@@ -1012,6 +1057,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Unlike most jelly fungi, Dacrymycetes are confirmed to be more closely related to mushrooms than to tremelloid fungi.",
   },
+
 
 {
     id: "ustilago-maydis",
@@ -1035,6 +1081,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Known as 'huitlacoche' in Mexican cuisine, it is a prized delicacy called the 'Mexican truffle' with an earthy, sweet flavor.",
   },
 
+
 {
     id: "puccinia-graminis",
     scientificName: "Puccinia graminis",
@@ -1056,6 +1103,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "This single pathogen triggered famines throughout history; the US eradicated millions of barberry shrubs in the 20th century to control it.",
   },
+
 
 {
     id: "morchella-esculenta",
@@ -1079,6 +1127,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Morels are ascomycetes — they shoot their spores explosively from sac-like cells (asci) rather than bearing them on club-shaped basidia.",
   },
 
+
 {
     id: "morchella-elata",
     scientificName: "Morchella elata",
@@ -1100,6 +1149,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Massive fruitings appear the spring after forest fires — burn morel hunting is a major seasonal activity in the Pacific Northwest.",
   },
+
 
 {
     id: "gyromitra-esculenta",
@@ -1123,6 +1173,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Contains gyromitrin which converts to monomethylhydrazine (rocket fuel component) in the body; has caused deaths even after cooking.",
   },
 
+
 {
     id: "helvella-lacunosa",
     scientificName: "Helvella lacunosa",
@@ -1144,6 +1195,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its deeply chambered hollow stalk is distinctive; related to morels but not choice edible — contains hydrazine toxins similar to false morels.",
   },
+
 
 {
     id: "sarcoscypha-coccinea",
@@ -1167,6 +1219,7 @@ export const FUNGI: Fungus[] = [
     funFact: "One of the first fungi to fruit in late winter; its brilliant red cup is a vivid surprise against snow or brown leaf litter.",
   },
 
+
 {
     id: "tuber-melanosporum",
     scientificName: "Tuber melanosporum",
@@ -1188,6 +1241,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Sells for over $1,000 per pound and dogs or pigs are trained to sniff them out underground; their aroma is caused by androstenol — a compound also found in human sweat.",
   },
+
 
 {
     id: "cordyceps-militaris",
@@ -1211,6 +1265,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Studied intensively for cordycepin, a compound that shows anticancer and antiviral activity in laboratory studies.",
   },
 
+
 {
     id: "ophiocordyceps-unilateralis",
     scientificName: "Ophiocordyceps unilateralis",
@@ -1232,6 +1287,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "It hijacks ant behavior — compelling infected ants to climb vegetation and clamp down before killing them, optimizing spore dispersal.",
   },
+
 
 {
     id: "xylaria-polymorpha",
@@ -1255,6 +1311,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Its charcoal-like black exterior hides spore-producing pockets (perithecia) embedded in the surface — you can see them as tiny dots.",
   },
 
+
 {
     id: "nectria-cinnabarina",
     scientificName: "Nectria cinnabarina",
@@ -1276,6 +1333,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Often seen on recently dead maple branches — the pink pustules are the asexual stage; darker red ones are the sexual (perfect) stage.",
   },
+
 
 {
     id: "chlorociboria-aeruginascens",
@@ -1299,6 +1357,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Its xylindein pigment stains wood a stunning turquoise-blue; this 'green oak' wood was prized by Renaissance intarsia craftsmen.",
   },
 
+
 {
     id: "aspergillus-niger",
     scientificName: "Aspergillus niger",
@@ -1320,6 +1379,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Used industrially to produce citric acid — nearly all the citric acid in your food and drinks is fermented from sugar by Aspergillus niger.",
   },
+
 
 {
     id: "penicillium-chrysogenum",
@@ -1343,6 +1403,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Alexander Fleming's famous 1928 accident — noticing this mold killing bacteria on a culture plate — led directly to the discovery of penicillin.",
   },
 
+
 {
     id: "rhizopus-stolonifer",
     scientificName: "Rhizopus stolonifer",
@@ -1364,6 +1425,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "A major post-harvest pathogen of fruits and bread; related Rhizopus species are used in Asian fermentation (tempeh, rice wine), but R. stolonifer itself is best known as the common 'black bread mold'.",
   },
+
 
 {
     id: "mucor-mucedo",
@@ -1387,6 +1449,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Mucor and its relatives represent a very ancient fungal lineage; they reproduce sexually by fusing two mating types to form a thick-walled zygospore.",
   },
 
+
 {
     id: "ramaria-formosa",
     scientificName: "Ramaria formosa",
@@ -1408,6 +1471,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its beautiful appearance it causes significant gastrointestinal symptoms; the Ramaria genus requires expert identification to eat safely.",
   },
+
 
 {
     id: "mutinus-caninus",
@@ -1431,6 +1495,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Like all stinkhorns, it begins as an underground 'egg'; the name refers to its resemblance to a dog's body part.",
   },
 
+
 {
     id: "pleurotus-djamor",
     scientificName: "Pleurotus djamor",
@@ -1452,6 +1517,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Among the fastest-growing cultivated fungi — a fruiting block can produce mushrooms in as little as 5–7 days after pinning.",
   },
+
 
 {
     id: "ganoderma-applanatum",
@@ -1475,6 +1541,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The white pore surface permanently shows brown marks, making it a natural canvas; artists have drawn intricate pictures on fresh brackets.",
   },
 
+
 {
     id: "piptoporus-betulinus",
     scientificName: "Fomitopsis betulina",
@@ -1496,6 +1563,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Ötzi the Iceman (5,300 years old) was found carrying birch polypore on leather cords — likely used medicinally as an antibiotic and styptic.",
   },
+
 
 {
     id: "meripilus-giganteus",
@@ -1519,6 +1587,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The distinctive black staining reaction when bruised or cut is caused by phenolic compounds oxidizing on exposure to air.",
   },
 
+
 {
     id: "chroogomphus-rutilus",
     scientificName: "Chroogomphus rutilus",
@@ -1540,6 +1609,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "May hyperparasitize — it fruits near Suillus (slippery jacks) and may tap into their mycorrhizal network to get carbohydrates from the tree.",
   },
+
 
 {
     id: "amanita-pantherina",
@@ -1563,6 +1633,7 @@ export const FUNGI: Fungus[] = [
     funFact: "More toxic per gram than A. muscaria because it contains ibotenic acid and muscimol in higher concentrations; causes severe intoxication.",
   },
 
+
 {
     id: "amanita-rubescens",
     scientificName: "Amanita rubescens",
@@ -1584,6 +1655,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of the few edible Amanitas, but it must be well cooked — raw specimens contain haemolysin that destroys red blood cells.",
   },
+
 
 {
     id: "boletus-satanas",
@@ -1607,6 +1679,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The violent blue bruising reaction is caused by variegatic acid oxidizing to quinone compounds when exposed to air.",
   },
 
+
 {
     id: "cantharellus-lateritius",
     scientificName: "Cantharellus lateritius",
@@ -1628,6 +1701,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most commercially harvested wild mushrooms in the southeastern US; fruits in large numbers after summer rains.",
   },
+
 
 {
     id: "flammulina-velutipes",
@@ -1651,6 +1725,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The cultivated enoki mushroom is a light-deprived domesticated form of this species — grown in the dark to produce long white stems.",
   },
 
+
 {
     id: "hericium-erinaceus",
     scientificName: "Hericium erinaceus",
@@ -1672,6 +1747,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Contains hericenones and erinacines that stimulate nerve growth factor — studied as a potential therapy for neurological conditions.",
   },
+
 
 {
     id: "omphalotus-illudens",
@@ -1695,6 +1771,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Its gills produce bioluminescence — a faint green glow visible in complete darkness — caused by the same biochemical pathway as fireflies.",
   },
 
+
 {
     id: "pluteus-cervinus",
     scientificName: "Pluteus cervinus",
@@ -1716,6 +1793,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its pink spore print and free gills are reliable ID features — the pink gills develop as spores mature, turning the initially white gills rosy.",
   },
+
 
 {
     id: "agaricus-xanthodermus",
@@ -1739,6 +1817,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Commonly confused with the edible field mushroom; the instant bright yellow staining at the base and chemical (ink) smell are reliable warnings.",
   },
 
+
 {
     id: "cantharellus-tubaeformis",
     scientificName: "Cantharellus tubaeformis",
@@ -1761,6 +1840,7 @@ export const FUNGI: Fungus[] = [
     funFact: "Fruits in autumn through early winter in the Pacific Northwest; an important commercial species harvested for export to Europe.",
   },
 
+
 {
     id: "suillus-pungens",
     scientificName: "Suillus pungens",
@@ -1779,9 +1859,10 @@ export const FUNGI: Fungus[] = [
     gbifId: 5953929,
     rarity: 40,
     fame: 20,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Its pungent chemical odor is distinctive and often described as metallic or like a permanent marker — useful for field identification.",
   },
+
 
 {
     id: "leucoagaricus-leucothites",
@@ -1801,9 +1882,10 @@ export const FUNGI: Fungus[] = [
     gbifId: 2534772,
     rarity: 25,
     fame: 20,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Resembles the deadly Amanita bisporigera but lacks a volva (basal cup) — always check the base before eating any all-white mushroom.",
   },
+
 
 {
     id: "clavariadelphus-truncatus",
@@ -1823,9 +1905,10 @@ export const FUNGI: Fungus[] = [
     gbifId: 2553799,
     rarity: 50,
     fame: 20,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Unlike branching corals, this species is a single unbranched club; the distinctly flattened top separates it from similar species.",
   },
+
 
 {
     id: "lycoperdon-pyriforme",
@@ -1849,6 +1932,7 @@ export const FUNGI: Fungus[] = [
     funFact: "The only wood-growing true puffball — its white cord-like mycelial strands connect it to buried wood that it decomposes.",
   },
 
+
 {
     id: "phaeolus-schweinitzii",
     scientificName: "Phaeolus schweinitzii",
@@ -1871,8 +1955,8 @@ export const FUNGI: Fungus[] = [
     funFact: "Historically used by weavers to dye wool in rich golden, green, and brown tones depending on mordant — hence the common name.",
   },
 
-// ── More Agaricales ───────────────────────────────────────────────────────
-  {
+
+{
     id: "macrolepiota-procera",
     scientificName: "Macrolepiota procera",
     commonName: "Parasol Mushroom",
@@ -1893,7 +1977,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of the tallest mushrooms in Europe — individual specimens can reach 40 cm tall with a cap diameter of 30 cm.",
   },
-  {
+
+{
     id: "galerina-marginata",
     scientificName: "Galerina marginata",
     commonName: "Deadly Skullcap",
@@ -1914,7 +1999,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Contains the same deadly amatoxins as the Death Cap; frequently confused with the edible Kuehneromyces mutabilis — a mistake that kills.",
   },
-  {
+
+{
     id: "lepista-nuda",
     scientificName: "Lepista nuda",
     commonName: "Wood Blewit",
@@ -1935,7 +2021,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of few mushrooms where the entire fruiting body — cap, gills, and stalk — is blue-violet when fresh; the color fades with age.",
   },
-  {
+
+{
     id: "clitocybe-nebularis",
     scientificName: "Clitocybe nebularis",
     commonName: "Cloudy Funnel",
@@ -1956,7 +2043,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its strong, sweet-soapy smell is distinctive and off-putting; it is also often parasitized by the small fungus Volvariella surrecta.",
   },
-  {
+
+{
     id: "mycena-galericulata",
     scientificName: "Mycena galericulata",
     commonName: "Common Bonnet",
@@ -1977,7 +2065,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most abundant wood-rotting species in temperate forests; a single stump may host hundreds of caps.",
   },
-  {
+
+{
     id: "inocybe-geophylla",
     scientificName: "Inocybe geophylla",
     commonName: "White Fibrecap",
@@ -1998,7 +2087,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Contains muscarine in concentrations high enough to cause cholinergic poisoning; all white-capped Inocybe species should be treated as toxic.",
   },
-  {
+
+{
     id: "entoloma-sinuatum",
     scientificName: "Entoloma sinuatum",
     commonName: "Livid Pinkgill",
@@ -2019,7 +2109,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most poisonous European fungi — responsible for severe gastroenteritis outbreaks when confused with edible species.",
   },
-  {
+
+{
     id: "tricholoma-terreum",
     scientificName: "Tricholoma terreum",
     commonName: "Grey Knight",
@@ -2040,7 +2131,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Formerly considered a good edible, but recent research suggests some populations contain toxins — caution is now advised.",
   },
-  {
+
+{
     id: "stropharia-aeruginosa",
     scientificName: "Stropharia aeruginosa",
     commonName: "Verdigris Roundhead",
@@ -2061,7 +2153,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its startling blue-green color comes from a unique pigment — the cap fades to yellow with age as the pigment degrades.",
   },
-  {
+
+{
     id: "kuehneromyces-mutabilis",
     scientificName: "Kuehneromyces mutabilis",
     commonName: "Sheathed Woodtuft",
@@ -2082,7 +2175,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Dangerously confused with the deadly Galerina marginata — both are brown, ringed, and grow in clusters on wood.",
   },
-  {
+
+{
     id: "volvariella-volvacea",
     scientificName: "Volvariella volvacea",
     commonName: "Paddy Straw Mushroom",
@@ -2103,7 +2197,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The third most cultivated mushroom globally; it must be eaten when immature (still in the egg stage) as it resembles deadly Amanitas when mature.",
   },
-  {
+
+{
     id: "panaeolus-cinctulus",
     scientificName: "Panaeolus cinctulus",
     commonName: "Banded Mottlegill",
@@ -2124,7 +2219,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Contains psilocybin; one of the most widespread psilocybin-containing fungi globally, found on every inhabited continent.",
   },
-  {
+
+{
     id: "amanita-fulva",
     scientificName: "Amanita fulva",
     commonName: "Tawny Grisette",
@@ -2145,7 +2241,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Grisettes are Amanitas without a ring — they fruit from an egg-like volva and the stipe has no annulus, making them easier to identify.",
   },
-  {
+
+{
     id: "amanita-vaginata",
     scientificName: "Amanita vaginata",
     commonName: "Grisette",
@@ -2166,7 +2263,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Must be well cooked before eating — like most Amanitas, it is significantly more digestible when heated through completely.",
   },
-  {
+
+{
     id: "amanita-virosa",
     scientificName: "Amanita virosa",
     commonName: "European Destroying Angel",
@@ -2187,7 +2285,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Contains the same lethal amatoxins as A. phalloides; the all-white form makes it especially dangerous when misidentified as an edible species.",
   },
-  {
+
+{
     id: "amanita-citrina",
     scientificName: "Amanita citrina",
     commonName: "False Death Cap",
@@ -2208,7 +2307,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its scary name 'False Death Cap,' it is merely inedible — it smells of raw potatoes but lacks the deadly amatoxins of true death caps.",
   },
-  {
+
+{
     id: "lepiota-cristata",
     scientificName: "Lepiota cristata",
     commonName: "Stinking Dapperling",
@@ -2229,7 +2329,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Many small Lepiota species contain deadly amatoxins in concentrations that can be fatal even in small amounts — none should be eaten.",
   },
-  {
+
+{
     id: "mycena-haematopus",
     scientificName: "Mycena haematopus",
     commonName: "Bleeding Mycena",
@@ -2250,8 +2351,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The vivid red 'blood' that drips from a broken stem is caused by pigment-containing cells in the stem tissue, not true blood vessels.",
   },
-  // ── More Boletales ────────────────────────────────────────────────────────
-  {
+
+{
     id: "paxillus-involutus",
     scientificName: "Paxillus involutus",
     commonName: "Brown Rollrim",
@@ -2272,7 +2373,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Was eaten in Eastern Europe for centuries, but is now known to cause fatal immune hemolysis — the immune system attacks red blood cells — after repeated exposure.",
   },
-  {
+
+{
     id: "xerocomellus-chrysenteron",
     scientificName: "Xerocomellus chrysenteron",
     commonName: "Red Cracking Bolete",
@@ -2293,7 +2395,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The cracked cap revealing red flesh underneath is its most distinctive feature — as if the skin of the mushroom has dried and split.",
   },
-  {
+
+{
     id: "leccinum-aurantiacum",
     scientificName: "Leccinum aurantiacum",
     commonName: "Orange Birch Bolete",
@@ -2314,7 +2417,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The flesh turns grey and then black when cut or bruised — an unusual reaction caused by oxidizing enzymes that is harmless and doesn't affect flavor.",
   },
-  {
+
+{
     id: "suillus-granulatus",
     scientificName: "Suillus granulatus",
     commonName: "Granulated Bolete",
@@ -2335,7 +2439,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Young pores weep milky droplets of spore-containing fluid — this milky exudate is characteristic and a reliable identification feature.",
   },
-  {
+
+{
     id: "caloboletus-calopus",
     scientificName: "Caloboletus calopus",
     commonName: "Bitter Beech Bolete",
@@ -2356,7 +2461,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its attractive appearance with bright red pores, it is intensely bitter — the taste is enough to discourage consumption without danger.",
   },
-  {
+
+{
     id: "tapinella-atrotomentosa",
     scientificName: "Tapinella atrotomentosa",
     commonName: "Velvet Rollrim",
@@ -2377,7 +2483,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its thick velvet-black stem is diagnostic — no other species looks quite like it; despite being a Boletales member it has gills rather than pores.",
   },
-  {
+
+{
     id: "gyroporus-castaneus",
     scientificName: "Gyroporus castaneus",
     commonName: "Chestnut Bolete",
@@ -2398,8 +2505,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Unlike most boletes, its stem becomes hollow when mature — a useful field mark that sets the Gyroporus genus apart.",
   },
-  // ── More Polyporales ──────────────────────────────────────────────────────
-  {
+
+{
     id: "cerioporus-squamosus",
     scientificName: "Cerioporus squamosus",
     commonName: "Dryad's Saddle",
@@ -2420,7 +2527,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Smells distinctly of watermelon rind; best eaten when young and tender — older specimens become very tough and leathery.",
   },
-  {
+
+{
     id: "polyporus-brumalis",
     scientificName: "Polyporus brumalis",
     commonName: "Winter Polypore",
@@ -2438,10 +2546,11 @@ export const FUNGI: Fungus[] = [
     gbifId: 5989171,
     rarity: 30,
     fame: 20,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Fruits in winter and early spring (the name 'brumalis' means 'of winter') — its cold tolerance is unusual among wood-decaying polypores.",
   },
-  {
+
+{
     id: "trichaptum-biforme",
     scientificName: "Trichaptum biforme",
     commonName: "Violet Toothed Polypore",
@@ -2462,7 +2571,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most common wood-decay fungi in eastern North America; the violet pores fade to white with age, making young specimens much more striking.",
   },
-  {
+
+{
     id: "pycnoporus-cinnabarinus",
     scientificName: "Pycnoporus cinnabarinus",
     commonName: "Cinnabar Bracket",
@@ -2483,7 +2593,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its brilliant cinnabar-red color is produced by cinnabarinic acid, which is being studied as an antimicrobial compound against drug-resistant bacteria.",
   },
-  {
+
+{
     id: "daedaleopsis-confragosa",
     scientificName: "Daedaleopsis confragosa",
     commonName: "Blushing Bracket",
@@ -2504,7 +2615,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The pore surface turns pink when bruised — hence 'blushing' — a reaction caused by a phenolic pigment that oxidizes on contact with air.",
   },
-  {
+
+{
     id: "daedalea-quercina",
     scientificName: "Daedalea quercina",
     commonName: "Oak Mazegill",
@@ -2525,7 +2637,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its pore surface is a three-dimensional labyrinth — the maze-like structure maximizes spore-releasing surface area within a compact structure.",
   },
-  {
+
+{
     id: "bjerkandera-adusta",
     scientificName: "Bjerkandera adusta",
     commonName: "Smoky Bracket",
@@ -2546,7 +2659,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Produces a unique grey-black pore surface from melanin — the same pigment as in human skin; its enzymes are studied for bioremediation of dyes.",
   },
-  {
+
+{
     id: "hapalopilus-nidulans",
     scientificName: "Hapalopilus nidulans",
     commonName: "Cinnamon Bracket",
@@ -2564,11 +2678,11 @@ export const FUNGI: Fungus[] = [
     gbifId: 5989130,
     rarity: 45,
     fame: 20,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Contains polyporic acid — it turns bright purple when potassium hydroxide (KOH) is applied; ingestion causes kidney failure and a purple discoloration of urine.",
   },
-  // ── More Russulales ───────────────────────────────────────────────────────
-  {
+
+{
     id: "russula-virescens",
     scientificName: "Russula virescens",
     commonName: "Green Brittlegill",
@@ -2589,7 +2703,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The cracked green cap is diagnostic — no other common green mushroom has this 'quilted' pattern; considered one of the finest edible Russulas.",
   },
-  {
+
+{
     id: "russula-cyanoxantha",
     scientificName: "Russula cyanoxantha",
     commonName: "Charcoal Burner",
@@ -2610,7 +2725,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The most variable Russula in cap color; the greasy (non-brittle) gill texture distinguishes it from similar species.",
   },
-  {
+
+{
     id: "russula-foetens",
     scientificName: "Russula foetens",
     commonName: "Stinking Brittlegill",
@@ -2631,7 +2747,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its rancid, oily smell — like motor oil or old dish water — is overpowering and makes it one of the most easily identified Russulas by scent alone.",
   },
-  {
+
+{
     id: "lactarius-torminosus",
     scientificName: "Lactarius torminosus",
     commonName: "Woolly Milk Cap",
@@ -2652,7 +2769,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Causes severe gastric cramps (hence 'torminosus' = griping) but is eaten pickled in Scandinavia after lengthy preparation to neutralize the acrid compounds.",
   },
-  {
+
+{
     id: "lactarius-piperatus",
     scientificName: "Lactarius piperatus",
     commonName: "Peppery Milk Cap",
@@ -2673,7 +2791,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Has the most intensely acrid latex of any Lactarius — the burning peppery taste is caused by sesquiterpene compounds and lingers for minutes.",
   },
-  {
+
+{
     id: "lactarius-volemus",
     scientificName: "Lactarius volemus",
     commonName: "Fishy Milk Cap",
@@ -2694,7 +2813,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Bleeds copious white latex when cut that quickly browns and dries; the strong fishy or herring-like smell is unique among woodland mushrooms.",
   },
-  {
+
+{
     id: "hericium-coralloides",
     scientificName: "Hericium coralloides",
     commonName: "Coral Tooth",
@@ -2715,8 +2835,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Unlike Lion's Mane (H. erinaceus), the teeth here grow on branching coral-like arms rather than hanging in a single mass — making it easier to identify.",
   },
-  // ── More Ascomycota ───────────────────────────────────────────────────────
-  {
+
+{
     id: "aleuria-aurantia",
     scientificName: "Aleuria aurantia",
     commonName: "Orange Peel Fungus",
@@ -2737,7 +2857,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Almost looks artificial — its brilliant orange color exactly mimics a discarded orange peel, which has led to it being called 'Orange Peel Fungus.'",
   },
-  {
+
+{
     id: "daldinia-concentrica",
     scientificName: "Daldinia concentrica",
     commonName: "King Alfred's Cakes",
@@ -2758,7 +2879,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The purple-black balls can smolder for hours, making them a traditional fire-starter; cross-section reveals beautiful alternating metallic rings.",
   },
-  {
+
+{
     id: "bulgaria-inquinans",
     scientificName: "Bulgaria inquinans",
     commonName: "Black Bulgar",
@@ -2779,7 +2901,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Named 'inquinans' because touching the black discs leaves an indelible black stain on fingers — caused by the black spore mass.",
   },
-  {
+
+{
     id: "rhytisma-acerinum",
     scientificName: "Rhytisma acerinum",
     commonName: "Tar Spot",
@@ -2800,7 +2923,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The spots look like drops of tar burned into the leaf; nearly every maple tree in North America is infected, yet the fungus rarely kills its host.",
   },
-  {
+
+{
     id: "claviceps-purpurea",
     scientificName: "Claviceps purpurea",
     commonName: "Ergot",
@@ -2821,7 +2945,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Ergot alkaloids caused the medieval plague 'St. Anthony's Fire'; they are also the basis for the synthesis of LSD, discovered by Albert Hofmann in 1943.",
   },
-  {
+
+{
     id: "trichoglossum-hirsutum",
     scientificName: "Trichoglossum hirsutum",
     commonName: "Hairy Earthtongue",
@@ -2842,7 +2967,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The earthtongues are an ancient lineage of ascomycetes; their tongue-like form is convergent with the unrelated Cudonia and Spathularia in other genera.",
   },
-  {
+
+{
     id: "leotia-lubrica",
     scientificName: "Leotia lubrica",
     commonName: "Jelly Baby",
@@ -2863,7 +2989,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Named 'Jelly Baby' for its resemblance to the gelatinous candy; its slippery texture is caused by a gelatinized outer layer of tissue.",
   },
-  {
+
+{
     id: "hymenoscyphus-fraxineus",
     scientificName: "Hymenoscyphus fraxineus",
     commonName: "Ash Dieback Fungus",
@@ -2884,8 +3011,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Has killed over 100 million ash trees in Europe since 2006 and threatens to eliminate ash from North American forests — one of the most destructive plant pathogens ever recorded.",
   },
-  // ── Mucoromycota ─────────────────────────────────────────────────────────
-  {
+
+{
     id: "cunninghamella-elegans",
     scientificName: "Cunninghamella elegans",
     commonName: "Elegant Cunninghamella",
@@ -2903,11 +3030,11 @@ export const FUNGI: Fungus[] = [
     gbifId: 3267698,
     rarity: 50,
     fame: 15,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Extensively used in pharmaceutical research as a 'microbial model' of mammalian drug metabolism — it converts drugs to metabolites just as the human liver does.",
   },
-  // ── Chytridiomycota ───────────────────────────────────────────────────────
-  {
+
+{
     id: "batrachochytrium-dendrobatidis",
     scientificName: "Batrachochytrium dendrobatidis",
     commonName: "Chytrid Fungus",
@@ -2928,8 +3055,8 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Considered the most destructive vertebrate pathogen ever recorded — responsible for the decline or extinction of over 200 amphibian species worldwide.",
   },
-  // ── Blastocladiomycota ────────────────────────────────────────────────────
-  {
+
+{
     id: "allomyces-reticulatus",
     scientificName: "Allomyces reticulatus",
     commonName: "Water Mold",
@@ -2947,9 +3074,19 @@ export const FUNGI: Fungus[] = [
     gbifId: 3267540,
     rarity: 75,
     fame: 10,
-    difficulty: "hard",
+    difficulty: "insane",
     funFact: "Allomyces was the first organism shown to have a true alternation of generations (haploid and diploid phases) with flagellated gametes — a landmark in mycology.",
   },
 ];
 
 export const FUNGI_MAP = new Map<string, Fungus>(FUNGI.map((f) => [f.id, f]));
+
+
+// TODO: audit all 136 entries — verify image URLs, refine rarity/fame/difficulty
+// ratings, cross-check taxonomy against Index Fungorum, and add crossSectionUrls
+// before expanding ACTIVE_FUNGI beyond the top 50.
+
+/** Top 50 species by fame — the only ones eligible as daily/practice targets. */
+export const ACTIVE_FUNGI = [...FUNGI]
+  .sort((a, b) => b.fame - a.fame || a.rarity - b.rarity)
+  .slice(0, 50);

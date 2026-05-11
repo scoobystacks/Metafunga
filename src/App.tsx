@@ -3,7 +3,7 @@ import { useDailyFungus } from "./hooks/useDailyFungus";
 import { GameBoard } from "./components/GameBoard";
 import { HowToPlay } from "./components/HowToPlay";
 import { clearOldKeys } from "./utils/storage";
-import { FUNGI } from "./data/fungi";
+import { ACTIVE_FUNGI, FUNGI } from "./data/fungi";
 import type { Difficulty } from "./types";
 
 clearOldKeys();
@@ -14,11 +14,12 @@ function pickPracticeFungus(
   excludeId: string,
   difficulty: PracticeDifficulty
 ): { fungus: typeof FUNGI[0]; seed: number } {
-  const pool = FUNGI.filter(
+  // "insane" draws from the full 136-entry database; other tiers use the active top-50.
+  const base = difficulty === "insane" ? FUNGI : ACTIVE_FUNGI;
+  const pool = base.filter(
     (f) => f.id !== excludeId && (difficulty === "any" || f.difficulty === difficulty)
   );
-  // Fall back to full pool if filter yields nothing
-  const candidates = pool.length > 0 ? pool : FUNGI.filter((f) => f.id !== excludeId);
+  const candidates = pool.length > 0 ? pool : base.filter((f) => f.id !== excludeId);
   const seed = Date.now();
   const s = (seed * 1664525 + 1013904223) & 0xffffffff;
   const idx = Math.abs(s) % candidates.length;
@@ -29,7 +30,8 @@ const DIFFICULTY_OPTS: { value: PracticeDifficulty; label: string; desc: string 
   { value: "easy",   label: "Easy",   desc: "Famous & common fungi" },
   { value: "medium", label: "Medium", desc: "Moderately well-known" },
   { value: "hard",   label: "Hard",   desc: "Obscure specialists" },
-  { value: "any",    label: "Any",    desc: "Random from all tiers" },
+  { value: "insane", label: "Insane", desc: "Full database — expert only" },
+  { value: "any",    label: "Any",    desc: "Random from active set" },
 ];
 
 export default function App() {
@@ -94,7 +96,6 @@ export default function App() {
             className="bg-white rounded-t-3xl sm:rounded-2xl shadow-xl w-full sm:max-w-sm p-5 space-y-4"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Handle bar */}
             <div className="flex justify-center pb-1 sm:hidden">
               <div className="w-10 h-1 rounded-full bg-spore-200" />
             </div>
@@ -107,9 +108,15 @@ export default function App() {
                 <button
                   key={value}
                   onClick={() => startPractice(value)}
-                  className="flex flex-col items-start gap-0.5 p-3 rounded-xl border border-spore-200 hover:border-myco-400 hover:bg-myco-50 transition-colors text-left"
+                  className={`flex flex-col items-start gap-0.5 p-3 rounded-xl border transition-colors text-left ${
+                    value === "insane"
+                      ? "border-purple-200 hover:border-purple-400 hover:bg-purple-50"
+                      : "border-spore-200 hover:border-myco-400 hover:bg-myco-50"
+                  }`}
                 >
-                  <span className="font-semibold text-spore-900 text-sm">{label}</span>
+                  <span className={`font-semibold text-sm ${value === "insane" ? "text-purple-900" : "text-spore-900"}`}>
+                    {label}
+                  </span>
                   <span className="text-xs text-spore-500">{desc}</span>
                 </button>
               ))}

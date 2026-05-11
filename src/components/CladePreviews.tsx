@@ -33,7 +33,7 @@ export function CladePreviews({ target, revealedRanks, dayNumber }: Props) {
   const previews = shuffled.slice(0, 6);
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-white rounded-2xl shadow-sm border border-spore-100 p-4">
       <p className="text-xs font-semibold text-spore-400 uppercase tracking-wide mb-2">
         Others in this {deepest}
       </p>

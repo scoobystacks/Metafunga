@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { execSync } from 'child_process'
 
-const commitHash = (() => {
-  try { return execSync('git rev-parse --short HEAD').toString().trim(); }
-  catch { return 'unknown'; }
-})();
+// Bump this manually with each release:
+//   patch (x.x.1): bug fixes, minor tweaks
+//   minor (x.1.0): new features, dataset additions
+//   major (2.0.0): major redesigns or architecture changes
+const APP_VERSION = "2.2";
 
 const buildDate = new Date().toLocaleString('en-US', {
   timeZone: 'America/New_York',
@@ -19,7 +19,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/Metafunga/",
   define: {
-    __BUILD_HASH__: JSON.stringify(commitHash),
+    __APP_VERSION__: JSON.stringify(APP_VERSION),
     __BUILD_DATE__: JSON.stringify(buildDate),
   },
 })
