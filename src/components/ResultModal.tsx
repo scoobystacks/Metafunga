@@ -13,6 +13,7 @@ interface Props {
   onClose: () => void;
   mode?: "daily" | "practice";
   onPlayPractice?: () => void;
+  onReset?: () => void;
 }
 
 const DIFFICULTY_CLS: Record<Difficulty, string> = {
@@ -67,7 +68,7 @@ function buildShareText(
 const allRanksSet = new Set(RANKS) as Set<Rank>;
 const emptySet = new Set<Rank>();
 
-export function ResultModal({ target, status, guesses, dayNumber, onClose, mode = "daily", onPlayPractice }: Props) {
+export function ResultModal({ target, status, guesses, dayNumber, onClose, mode = "daily", onPlayPractice, onReset }: Props) {
   const edibility = EDIBILITY_BADGE[target.edibility] ?? EDIBILITY_BADGE.inedible;
   const shareText = buildShareText(guesses, target.id, dayNumber, status);
 
@@ -245,6 +246,16 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose, mode 
               className="w-full py-3 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm border border-amber-200 hover:bg-amber-200 transition-colors"
             >
               Play a practice game 🍄
+            </button>
+          )}
+
+          {/* Reset / play again (daily only) */}
+          {mode === "daily" && onReset && (
+            <button
+              onClick={onReset}
+              className="w-full py-2.5 rounded-xl border border-spore-200 text-spore-500 hover:bg-spore-50 text-sm transition-colors"
+            >
+              Play again ↺
             </button>
           )}
 

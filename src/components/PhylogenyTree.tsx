@@ -1,16 +1,10 @@
 import { useState } from "react";
 import type { Fungus, Guess, Rank } from "../types";
 import { RANKS } from "../types";
-import { deepestRevealedRank, wikipediaUrl } from "../utils/phylogeny";
+import { deepestRevealedRank, wikipediaUrl, computeGuessClusters, rankLabel } from "../utils/phylogeny";
+import type { GuessCluster } from "../utils/phylogeny";
 import { WikipediaPreview } from "./WikipediaPreview";
-
-function rankLabel(rank: Rank): string {
-  const labels: Record<Rank, string> = {
-    kingdom: "Kingdom", phylum: "Phylum", class: "Class",
-    order: "Order", family: "Family", genus: "Genus", species: "Species",
-  };
-  return labels[rank];
-}
+import { FUNGI_MAP } from "../data/fungi";
 
 interface Props {
   target: Fungus;
@@ -20,6 +14,7 @@ interface Props {
   showAll?: boolean;
 }
 
+// Colour scale: deeper match = warmer/greener
 const MATCH_COLORS: Record<number, string> = {
   0: "bg-stone-100 text-stone-600 border-stone-200",
   1: "bg-amber-100 text-amber-800 border-amber-200",
@@ -30,6 +25,8 @@ const MATCH_COLORS: Record<number, string> = {
   6: "bg-myco-100 text-myco-800 border-myco-200",
 };
 
+const INDENT = 10; // px indent per rank level
+
 export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesses, showAll = false }: Props) {
   const [expandedRank, setExpandedRank] = useState<Rank | null>(null);
 
@@ -37,16 +34,29 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
   const deepest = deepestRevealedRank(effectiveRevealed);
   const deepestIndex = RANKS.indexOf(deepest);
 
-  // Map rank -> guesses that deepest-matched at exactly that rank
+  // Compute dead-end cluster branches for wrong guesses
+  const clusters = computeGuessClusters(guesses, target, FUNGI_MAP);
+  const clusteredIds = new Set(clusters.flatMap((c) => c.guessFungusIds));
+
+  // Map rank → non-clustered guesses whose deepest match is exactly that rank
   const guessesByRank = new Map<Rank | "none", Guess[]>();
   guessesByRank.set("none", []);
   for (const rank of RANKS) guessesByRank.set(rank, []);
   for (const guess of guesses) {
-    const key = guess.deepestMatchRank ?? "none";
-    guessesByRank.get(key)!.push(guess);
+    if (clusteredIds.has(guess.fungusId)) continue;
+    guessesByRank.get(guess.deepestMatchRank ?? "none")!.push(guess);
   }
 
-  // Ranks to render: all revealed + first unrevealed
+  // Map attachRank → clusters
+  const clustersByAttachRank = new Map<Rank, GuessCluster[]>();
+  for (const cluster of clusters) {
+    if (!clustersByAttachRank.has(cluster.attachRank)) {
+      clustersByAttachRank.set(cluster.attachRank, []);
+    }
+    clustersByAttachRank.get(cluster.attachRank)!.push(cluster);
+  }
+
+  // Revealed ranks + the single next-unrevealed rank (shows "???")
   const ranksToRender = RANKS.filter((rank, index) => {
     if (effectiveRevealed.has(rank)) return true;
     if (index === deepestIndex + 1) return true;
@@ -54,86 +64,98 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
   });
 
   return (
-    <div className="w-full flex flex-col items-center gap-0 py-2">
+    <div className="w-full py-1 overflow-x-hidden">
       {ranksToRender.map((rank, renderIndex) => {
+        const rankIndex = RANKS.indexOf(rank);
         const isRevealed = effectiveRevealed.has(rank);
         const isHintRevealed = hintRevealedRanks.has(rank) && !showAll;
         const value = isRevealed ? target.taxonomy[rank] : null;
         const guessesHere = guessesByRank.get(rank) ?? [];
         const isDeepest = rank === deepest && isRevealed;
         const isExpanded = expandedRank === rank;
-        const leftGuesses = guessesHere.filter((_, i) => i % 2 === 0);
-        const rightGuesses = guessesHere.filter((_, i) => i % 2 === 1);
+        const indentPx = rankIndex * INDENT;
+        const clustersHere = clustersByAttachRank.get(rank) ?? [];
 
         return (
-          <div key={rank} className="w-full flex flex-col items-center">
-            {/* Vertical connector from above */}
+          <div key={rank}>
+            {/* L-shaped connector from parent above */}
             {renderIndex > 0 && (
-              <div className="w-0.5 h-4 bg-spore-200 flex-shrink-0" />
+              <div
+                className="flex items-stretch"
+                style={{ marginLeft: (rankIndex - 1) * INDENT, height: 14 }}
+              >
+                <div className="border-l-2 border-spore-200" style={{ width: 10 }} />
+                <div className="border-b-2 border-spore-200 self-end" style={{ width: INDENT }} />
+              </div>
             )}
 
-            <div className="w-full flex items-center justify-center gap-0">
-              {/* Left branch */}
-              <div className="flex-1 flex justify-end items-center min-h-[40px]">
-                {leftGuesses.length > 0 && (
-                  <>
-                    <div className="flex flex-wrap justify-end gap-1 max-w-[120px]">
-                      {leftGuesses.map((guess) => (
-                        <GuessBubble key={guess.fungusId} guess={guess} />
-                      ))}
-                    </div>
-                    <div className="w-4 h-0.5 bg-spore-200 flex-shrink-0" />
-                  </>
-                )}
-              </div>
+            {/* Node row */}
+            <div className="flex items-start gap-1.5" style={{ marginLeft: indentPx }}>
+              {/* Main node */}
+              {isRevealed ? (
+                <button
+                  onClick={() => setExpandedRank(isExpanded ? null : rank)}
+                  className={`flex flex-col items-start px-2.5 py-1.5 rounded-xl border transition-all cursor-pointer select-none w-fit min-w-[90px] text-left ${
+                    isDeepest
+                      ? "bg-amber-200 border-amber-400 text-amber-900 ring-1 ring-amber-400 ring-offset-1"
+                      : "bg-amber-100 border-amber-300 text-amber-900"
+                  } hover:brightness-95`}
+                >
+                  <span className="text-[8px] font-bold uppercase tracking-widest text-amber-500 leading-none mb-0.5">
+                    {rankLabel(rank)}{isHintRevealed ? " 💡" : ""}
+                  </span>
+                  <span className="text-[10px] font-bold leading-tight italic">
+                    {value}
+                  </span>
+                </button>
+              ) : (
+                <div className="flex flex-col items-start px-2.5 py-1.5 rounded-xl border border-spore-200 bg-spore-100 w-fit min-w-[90px]">
+                  <span className="text-[8px] font-bold uppercase tracking-widest text-spore-400 leading-none mb-0.5">
+                    {rankLabel(rank)}
+                  </span>
+                  <span className="text-sm font-bold text-spore-300">???</span>
+                </div>
+              )}
 
-              {/* Center node */}
-              <div className="flex flex-col items-center flex-shrink-0 w-36">
-                {isRevealed ? (
-                  <button
-                    onClick={() => setExpandedRank(isExpanded ? null : rank)}
-                    className={`w-full flex flex-col items-center px-3 py-1.5 rounded-xl border transition-all cursor-pointer select-none ${
-                      isHintRevealed
-                        ? "bg-amber-50 border-amber-300 text-amber-900"
-                        : "bg-amber-100 border-amber-300 text-amber-900"
-                    } ${isDeepest ? "ring-2 ring-myco-400 ring-offset-1" : ""} hover:brightness-95`}
-                  >
-                    <span className="text-[9px] font-semibold uppercase tracking-wide text-amber-600 opacity-75 leading-none mb-0.5">
-                      {rankLabel(rank)}{isHintRevealed ? " 💡" : ""}
-                    </span>
-                    <span className="text-xs font-bold leading-tight text-center break-words">
-                      {value}
-                    </span>
-                    <span className="text-[9px] text-amber-500 mt-0.5 leading-none">tap to learn more</span>
-                  </button>
-                ) : (
-                  <div className="w-full flex flex-col items-center px-3 py-1.5 rounded-xl border border-spore-200 bg-spore-100">
-                    <span className="text-[9px] font-semibold uppercase tracking-wide text-spore-400 opacity-75 leading-none mb-0.5">
-                      {rankLabel(rank)}
-                    </span>
-                    <span className="text-sm font-bold text-spore-300">???</span>
+              {/* Non-clustered guess bubbles */}
+              {guessesHere.length > 0 && (
+                <div className="flex items-center gap-1 flex-wrap pt-1">
+                  <div className="w-3 h-px bg-spore-200 flex-shrink-0 mt-3" />
+                  <div className="flex flex-wrap gap-1">
+                    {guessesHere.map((guess) => (
+                      <GuessBubble key={guess.fungusId} guess={guess} />
+                    ))}
                   </div>
-                )}
-              </div>
+                </div>
+              )}
 
-              {/* Right branch */}
-              <div className="flex-1 flex justify-start items-center min-h-[40px]">
-                {rightGuesses.length > 0 && (
-                  <>
-                    <div className="w-4 h-0.5 bg-spore-200 flex-shrink-0" />
-                    <div className="flex flex-wrap justify-start gap-1 max-w-[120px]">
-                      {rightGuesses.map((guess) => (
-                        <GuessBubble key={guess.fungusId} guess={guess} />
-                      ))}
+              {/* Dead-end cluster branches */}
+              {isRevealed && clustersHere.map((cluster) => (
+                <div key={`${cluster.rank}:${cluster.value}`} className="flex items-start gap-0.5 pt-1">
+                  <div className="w-3 h-px bg-stone-300 flex-shrink-0 mt-[14px]" />
+                  <div className="flex flex-col gap-1">
+                    <div className="flex flex-col items-start px-2 py-1 rounded-lg border border-dashed border-stone-400 bg-stone-100 text-stone-700 w-fit min-w-[80px]">
+                      <span className="text-[7px] font-bold uppercase tracking-widest text-stone-400 leading-none mb-0.5">
+                        {rankLabel(cluster.rank)}
+                      </span>
+                      <span className="text-[9px] font-semibold italic leading-tight">
+                        {cluster.value}
+                      </span>
                     </div>
-                  </>
-                )}
-              </div>
+                    <div className="flex flex-wrap gap-1 ml-1">
+                      {cluster.guessFungusIds.map((id) => {
+                        const g = guesses.find((gg) => gg.fungusId === id);
+                        return g ? <GuessBubble key={id} guess={g} /> : null;
+                      })}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
 
-            {/* Wikipedia inline preview (expanded) */}
+            {/* Wikipedia inline preview */}
             {isRevealed && isExpanded && value && (
-              <div className="w-full max-w-xs mt-2 mb-1 px-2">
+              <div className="mt-1.5 mb-1" style={{ marginLeft: indentPx }}>
                 <a
                   href={wikipediaUrl(value)}
                   target="_blank"

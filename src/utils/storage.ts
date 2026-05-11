@@ -47,5 +47,13 @@ export function clearOldKeys(): void {
   }
 }
 
+export function clearState(key?: string): void {
+  try {
+    localStorage.removeItem(PREFIX + (key ?? todayKey()));
+  } catch {
+    // ignore
+  }
+}
+
 export type { SavedState };
 export type { Rank };

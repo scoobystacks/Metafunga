@@ -13,8 +13,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Boreal and mixed forests; associates with birch, pine, and spruce",
     naRange: "Widespread across northern North America; common in Pacific Northwest and Rocky Mountains",
     morphology: { capShape: "Convex to flat, vivid red to orange with white warts", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1386/medium.jpg",
-    imageAttribution: "© Ken-ichi Ueda / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Amanita_muscaria_3_vliegenzwam.jpg/400px-Amanita_muscaria_3_vliegenzwam.jpg",
+    imageAttribution: "© Onderwijsgek / CC BY-SA 2.5",
     crossSectionUrl: null,
     gbifId: 5284036,
     rarity: 30,
@@ -22,6 +22,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The white warts on its cap are remnants of a universal veil that enclosed the entire mushroom when young.",
   },
+
 
 
 {
@@ -36,8 +37,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed forests, especially with oak; introduced to North America",
     naRange: "Pacific Coast (California to British Columbia) and Atlantic coast; expanding range",
     morphology: { capShape: "Convex to flat, pale yellow-green to olive", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/358397/medium.jpg",
-    imageAttribution: "© Christian Schwarz / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Amanita_phalloides_1.JPG/400px-Amanita_phalloides_1.JPG",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284001,
     rarity: 40,
@@ -45,6 +46,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Responsible for the majority of fatal mushroom poisonings worldwide; amatoxins destroy liver and kidney cells over several days.",
   },
+
 
 
 {
@@ -59,8 +61,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Eastern deciduous forests, often with oak and beech",
     naRange: "Eastern North America, most common east of the Mississippi",
     morphology: { capShape: "Convex to flat, pure white throughout", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/5373024/medium.jpg",
-    imageAttribution: "© Dan Molter / iNaturalist CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Amanita_bisporigera_(Destr_Angel)_crop.jpg/400px-Amanita_bisporigera_(Destr_Angel)_crop.jpg",
+    imageAttribution: "© Rolf Kleemann / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284029,
     rarity: 50,
@@ -68,6 +70,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Its pure white color makes it dangerously easy to confuse with edible species like button mushrooms or puffballs.",
   },
+
 
 
 {
@@ -82,8 +85,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Warm deciduous forests with oak; rare in North America",
     naRange: "Primarily Europe; found in southeastern US and Mexico",
     morphology: { capShape: "Convex, vivid orange-red with smooth cap surface", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Amanita_caesarea_001.jpg/400px-Amanita_caesarea_001.jpg",
-    imageAttribution: "© Archenzo / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Amanita_caesarea.jpg/400px-Amanita_caesarea.jpg",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284010,
     rarity: 75,
@@ -91,6 +94,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Prized by Roman emperors — its name honors Julius Caesar and it was reportedly a favorite dish of Emperor Claudius.",
   },
+
 
 
 {
@@ -105,8 +109,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Grasslands, pastures, lawns, and meadows",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex to flat, white to pale grey-brown", gillAttachment: "Free", sporeColor: "Dark brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/2035524/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Agaricus_campestris.jpg/400px-Agaricus_campestris.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5246631,
     rarity: 20,
@@ -114,6 +118,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "A classic wild edible prized for centuries; its gills start pale pink and darken to chocolate-brown as the spores mature.",
   },
+
 
 
 {
@@ -128,8 +133,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Grasslands and disturbed areas; widely cultivated globally",
     naRange: "Occasionally wild in western North America; ubiquitous in cultivation",
     morphology: { capShape: "Dome-shaped, white to light brown", gillAttachment: "Free", sporeColor: "Dark brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mushroom_%28Agaricus_bisporus%29.jpg/400px-Mushroom_%28Agaricus_bisporus%29.jpg",
-    imageAttribution: "© Evan-Amos / Wikimedia Commons CC0",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Agaricus_bisporus.jpg/400px-Agaricus_bisporus.jpg",
+    imageAttribution: "© Lebrac / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5246604,
     rarity: 5,
@@ -137,6 +142,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "White button, cremini, and portobello mushrooms are all the same species at different stages of maturity and cultivar selection.",
   },
+
 
 
 {
@@ -151,8 +157,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Roadsides, lawns, disturbed soil, waste areas",
     naRange: "Widespread across North America",
     morphology: { capShape: "Cylindrical with shaggy white scales, self-digests (autolyzes) from bottom up", gillAttachment: "Free", sporeColor: "Black", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/217022/medium.jpg",
-    imageAttribution: "© fungus_guy / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Coprinus_comatus.jpg/400px-Coprinus_comatus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2533051,
     rarity: 25,
@@ -160,6 +166,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "It must be eaten within hours of picking because it self-digests into black ink — a process called autodigestion — to disperse its spores.",
   },
+
 
 
 {
@@ -174,8 +181,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Stumps, buried wood, and the base of dying hardwoods",
     naRange: "Very common across North America",
     morphology: { capShape: "Bell-shaped, tawny-brown, dusted with sparkling granules when young", gillAttachment: "Free", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/14047/medium.jpg",
-    imageAttribution: "© Aaron Aguiar / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Coprinellus_micaceus.jpg/400px-Coprinellus_micaceus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534117,
     rarity: 10,
@@ -183,6 +190,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The mica-like sparkling granules on young caps are veil remnants that give this mushroom a glittery appearance after rain.",
   },
+
 
 
 {
@@ -197,8 +205,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Lawns, pastures, and grassy areas; grows in rings",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex with broad umbo, pale tan to buff", gillAttachment: "Free to distant", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/28748/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Marasmius_oreades_2011_G1.jpg/400px-Marasmius_oreades_2011_G1.jpg",
+    imageAttribution: "© Sten Porse / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2522475,
     rarity: 20,
@@ -206,6 +214,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Fairy rings can expand outward for centuries; some rings in Europe are estimated to be over 700 years old.",
   },
+
 
 
 {
@@ -220,8 +229,8 @@ export const FUNGI: Fungus[] = [
     habitat: "At the base of living and dead hardwoods and conifers",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex, honey-yellow to tan with small dark scales at center", gillAttachment: "Decurrent", sporeColor: "White", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/122741/medium.jpg",
-    imageAttribution: "© Tom Bruns / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Armillaria_mellea.jpg/400px-Armillaria_mellea.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2533025,
     rarity: 15,
@@ -229,6 +238,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Honey mushrooms spread through wood via black root-like rhizomorphs; individual clones can cover acres of forest, slowly killing host trees over decades.",
   },
+
 
 
 {
@@ -243,8 +253,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Clustered on decaying hardwood and conifer stumps",
     naRange: "Very common across North America",
     morphology: { capShape: "Convex, sulfur-yellow with orange-brown center", gillAttachment: "Adnate", sporeColor: "Purple-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/2036/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Hypholoma_fasciculare_1.jpg/400px-Hypholoma_fasciculare_1.jpg",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534434,
     rarity: 15,
@@ -252,6 +262,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Its intensely bitter taste is a reliable warning — even small amounts cause gastrointestinal distress.",
   },
+
 
 
 {
@@ -266,8 +277,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Cattle dung and enriched soils in tropical and subtropical grasslands",
     naRange: "Gulf Coast states, Florida, and Mexico",
     morphology: { capShape: "Convex, golden to cinnamon-brown, bruises blue", gillAttachment: "Adnate", sporeColor: "Purple-black", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1429905/medium.jpg",
-    imageAttribution: "© Alan Rockefeller / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Psilocybe_cubensis.jpg/400px-Psilocybe_cubensis.jpg",
+    imageAttribution: "© Alan Rockefeller / CC BY-SA 4.0",
     crossSectionUrl: null,
     gbifId: 8000048,
     rarity: 50,
@@ -275,6 +286,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Psilocybin, its active compound, is being researched as a treatment for depression, PTSD, and addiction.",
   },
+
 
 
 {
@@ -289,8 +301,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Clustered at the base of hardwood trees and stumps",
     naRange: "Widespread across North America",
     morphology: { capShape: "Broadly convex, bright orange-yellow to rust, dry and fibrous", gillAttachment: "Adnate", sporeColor: "Rusty orange", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/5000786/medium.jpg",
-    imageAttribution: "© alan_rockefeller / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Gymnopilus_junonius.jpg/400px-Gymnopilus_junonius.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 4932477,
     rarity: 45,
@@ -298,6 +310,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its massive, impressive size, it is bitter and contains psilocybin in some populations — it is not recommended for eating.",
   },
+
 
 
 {
@@ -312,8 +325,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Coniferous and mixed forests with spruce, pine, fir, and oak",
     naRange: "Widespread; especially common in Rocky Mountains and Pacific Northwest",
     morphology: { capShape: "Convex to broad, brown; pores white to yellow, not gills", gillAttachment: "Tubes/pores", sporeColor: "Olive-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/17/medium.jpg",
-    imageAttribution: "© Ken-ichi Ueda / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boletus_edulis_EthanF.jpg/400px-Boletus_edulis_EthanF.jpg",
+    imageAttribution: "© Ethan Freid / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5953798,
     rarity: 35,
@@ -321,6 +334,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "One of the world's most prized edible fungi, traded dried in markets as 'cèpes' in France and 'porcini' in Italy.",
   },
+
 
 
 {
@@ -335,8 +349,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Pine plantations and native pine forests",
     naRange: "Common wherever pines grow across North America",
     morphology: { capShape: "Convex, slimy brown with pale pores below", gillAttachment: "Tubes/pores", sporeColor: "Cinnamon-brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/6455/medium.jpg",
-    imageAttribution: "© Łukasz Łuczaj / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Suillus_luteus.jpg/400px-Suillus_luteus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5953914,
     rarity: 20,
@@ -344,6 +358,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Its slimy cap cuticle must be peeled before cooking to avoid a laxative effect in some people.",
   },
+
 
 
 {
@@ -358,8 +373,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Birch forests and mixed woods with birch",
     naRange: "Common across northern North America wherever birch grows",
     morphology: { capShape: "Convex, grey-brown; stalk with distinctive dark scabers", gillAttachment: "Tubes/pores", sporeColor: "Olive-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/182066/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Leccinum_scabrum.jpg/400px-Leccinum_scabrum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5953986,
     rarity: 30,
@@ -367,6 +382,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Always found near birch trees due to its obligate mycorrhizal partnership — it cannot grow without a birch host.",
   },
+
 
 
 {
@@ -381,8 +397,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Sandy, poor soils near pines, oaks, and eucalyptus; often in disturbed ground",
     naRange: "Widespread across North America, common in arid and sandy regions",
     morphology: { capShape: "Club-shaped puffball-like body, yellow-brown to black; filled with spore chambers", gillAttachment: "None (puffball)", sporeColor: "Brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3440048/medium.jpg",
-    imageAttribution: "© Peter Woodard / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Pisolithus_arhizus.jpg/400px-Pisolithus_arhizus.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2552826,
     rarity: 40,
@@ -390,6 +406,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "It is a premier tool for reforestation — its spores are used to inoculate tree seedlings with beneficial mycorrhizal fungi.",
   },
+
 
 
 {
@@ -404,8 +421,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed forests with oak, beech, fir, and spruce",
     naRange: "Widespread across North America, particularly the Pacific Northwest and Appalachians",
     morphology: { capShape: "Wavy, funnel-shaped, egg-yolk yellow with forked ridges (not true gills)", gillAttachment: "Decurrent ridges", sporeColor: "Pale yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/116/medium.jpg",
-    imageAttribution: "© Ken-ichi Ueda / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eetbare_paddestoel_cantharellus_cibarius.jpg/400px-Eetbare_paddestoel_cantharellus_cibarius.jpg",
+    imageAttribution: "© Onderwijsgek / CC BY-SA 2.5",
     crossSectionUrl: null,
     gbifId: 2553655,
     rarity: 30,
@@ -413,6 +430,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Their forked blunt ridges are a key ID feature; false chanterelles (Hygrophoropsis) have true sharp gills.",
   },
+
 
 
 {
@@ -427,8 +445,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous forests, often in leaf litter near oak and beech",
     naRange: "Eastern North America and Pacific Northwest",
     morphology: { capShape: "Hollow, trumpet-shaped, dark grey to black, thin and wavy", gillAttachment: "Smooth to wrinkled outer surface (no true gills)", sporeColor: "White to cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/15977/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Craterellus_cornucopioides.jpg/400px-Craterellus_cornucopioides.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553645,
     rarity: 45,
@@ -436,6 +454,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Their dark color makes them notoriously hard to spot on a forest floor — foragers call them 'poor man's truffle' for their rich flavor.",
   },
+
 
 
 {
@@ -450,8 +469,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and conifer forests, commonly with oak and beech",
     naRange: "Widespread across northern and western North America",
     morphology: { capShape: "Convex to irregular, pale cream to tan; underside covered in short teeth (spines)", gillAttachment: "Spines/teeth", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/42940/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hydnum_repandum.jpg/400px-Hydnum_repandum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553669,
     rarity: 35,
@@ -459,6 +478,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The hedgehog mushroom has no dangerous lookalikes — no toxic mushroom bears teeth on its underside like this species does.",
   },
+
 
 
 {
@@ -473,8 +493,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Forest floors, often in moss, under conifers and hardwoods",
     naRange: "Common across North America",
     morphology: { capShape: "Branched coral-like, white to cream with crested/frilled tips", gillAttachment: "None (coral)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/50698/medium.jpg",
-    imageAttribution: "© Lukas Large / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Clavulina_cristata.jpg/400px-Clavulina_cristata.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553724,
     rarity: 30,
@@ -482,6 +502,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Often parasitized by the ascomycete Helminthosphaeria clavariarum, which turns its tips grey-brown.",
   },
+
 
 
 {
@@ -496,8 +517,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dead and dying hardwood trees and stumps worldwide",
     naRange: "Ubiquitous across all of North America",
     morphology: { capShape: "Fan-shaped, thin and leathery with concentric color bands", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/4808/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Trametes_versicolor_-_Lindsey.jpg/400px-Trametes_versicolor_-_Lindsey.jpg",
+    imageAttribution: "© Lindsey / CC BY-SA 2.5",
     crossSectionUrl: null,
     gbifId: 5989184,
     rarity: 5,
@@ -505,6 +526,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "PSK (polysaccharide-K) derived from this mushroom is an approved cancer drug in Japan and extensively studied worldwide.",
   },
+
 
 
 {
@@ -519,8 +541,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Base of hardwoods, especially oak; also on conifers",
     naRange: "Eastern North America and the Pacific Coast; more common in Asian forests",
     morphology: { capShape: "Kidney to fan-shaped, mahogany red with lacquered sheen", gillAttachment: "Tiny pores below", sporeColor: "Brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/2087/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Ganoderma_lucidum.jpg/400px-Ganoderma_lucidum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989128,
     rarity: 40,
@@ -528,6 +550,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Revered for over 2,000 years in Chinese medicine as the 'mushroom of immortality'; now studied for immune-modulating compounds.",
   },
+
 
 
 {
@@ -542,8 +565,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dead conifers and hardwoods; a major decomposer of dead wood",
     naRange: "Widespread across northern North America and mountains",
     morphology: { capShape: "Hoof-shaped bracket with reddish-orange growth margin; white pores below", gillAttachment: "Tiny pores below", sporeColor: "Pale yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/68900/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Fomitopsis_pinicola.jpg/400px-Fomitopsis_pinicola.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989236,
     rarity: 30,
@@ -551,6 +574,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The bracket of this fungus can persist for 30–80 years, growing a new tube layer each season.",
   },
+
 
 
 {
@@ -565,8 +589,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Base of oaks and other hardwoods, particularly old trees",
     naRange: "Eastern North America, common from New England to the Southeast",
     morphology: { capShape: "Overlapping grey-brown fans radiating from central base", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/4226/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Grifola_frondosa_(Maitake).jpg/400px-Grifola_frondosa_(Maitake).jpg",
+    imageAttribution: "© Ak ccm / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2552910,
     rarity: 45,
@@ -574,6 +598,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "A single fruiting body can weigh over 100 pounds; in Japan it is known as 'maitake' — the dancing mushroom.",
   },
+
 
 
 {
@@ -588,8 +613,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On living and dead oaks, cherries, and other hardwoods",
     naRange: "Widespread across eastern North America; also western species L. conifericola",
     morphology: { capShape: "Bright orange and yellow overlapping shelves; pores, not gills below", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1286/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Laetiporus_sulphureus.jpg/400px-Laetiporus_sulphureus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989280,
     rarity: 35,
@@ -597,6 +622,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Its fibrous texture genuinely resembles cooked chicken breast and can be used as a meat substitute in many dishes.",
   },
+
 
 
 {
@@ -611,8 +637,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On living birch trees, especially in cold climates",
     naRange: "Northern forests across Canada and northern US states",
     morphology: { capShape: "Black, charcoal-like sterile conk; orange interior", gillAttachment: "None (resupinate)", sporeColor: "Yellow-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3700374/medium.jpg",
-    imageAttribution: "© Ryan Hodnett / iNaturalist CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Inonotus_obliquus.jpg/400px-Inonotus_obliquus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989342,
     rarity: 50,
@@ -620,6 +646,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The visible black mass is not the fruiting body but a sterile conk; the actual fruiting body is rarely seen under the bark.",
   },
+
 
 
 {
@@ -634,8 +661,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Base of conifers, especially pines; emerges from roots",
     naRange: "Pacific Northwest and Rocky Mountains",
     morphology: { capShape: "Large cream-colored mass of curly flattened branches, like a sea sponge", gillAttachment: "None (coral/cauliflower)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1001680/medium.jpg",
-    imageAttribution: "© Else Vellinga / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Sparassis_radicata.jpg/400px-Sparassis_radicata.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989411,
     rarity: 60,
@@ -643,6 +670,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "A single fruiting body can weigh up to 30 pounds; it returns to the same spot each year from a persistent root-like structure.",
   },
+
 
 
 {
@@ -657,8 +685,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Wet conifer forests, boggy areas, often with sphagnum moss",
     naRange: "Northern North America, common in Canadian forests",
     morphology: { capShape: "Convex, bright scarlet red, fragile brittle gills", gillAttachment: "Adnate", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/53012/medium.jpg",
-    imageAttribution: "© Roo Colombini / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Russula_emetica.jpg/400px-Russula_emetica.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245697,
     rarity: 25,
@@ -666,6 +694,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Russulas have uniquely brittle gills made of round cells (sphaerocysts) rather than elongated ones — they snap cleanly like chalk.",
   },
+
 
 
 {
@@ -680,8 +709,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Conifer forests with pine and spruce",
     naRange: "Widespread across northern North America",
     morphology: { capShape: "Convex, dark red to purple, cream gills yellowing with age", gillAttachment: "Adnate", sporeColor: "Cream to ochre", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/12030/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Russula_xerampelina.jpg/400px-Russula_xerampelina.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245760,
     rarity: 30,
@@ -689,6 +718,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Smells distinctly of shellfish — like cooked crab or shrimp — making it one of the most uniquely scented mushrooms.",
   },
+
 
 
 {
@@ -703,8 +733,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Pine forests; strictly associated with pines",
     naRange: "Widespread wherever pines grow, common in western and eastern North America",
     morphology: { capShape: "Convex with inrolled margin, orange with concentric zones; bleeds orange latex", gillAttachment: "Decurrent", sporeColor: "Pale yellow-cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/20037/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Lactarius_deliciosus.jpg/400px-Lactarius_deliciosus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245796,
     rarity: 30,
@@ -712,6 +742,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Lactarius fungi 'bleed' a milky latex when cut; in L. deliciosus this milk is carrot-orange and stains the flesh green with age.",
   },
+
 
 
 {
@@ -726,8 +757,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed forests, especially with oaks",
     naRange: "Eastern North America and parts of Mexico and Guatemala; common in Appalachians",
     morphology: { capShape: "Convex, deep indigo blue with concentric zones; bleeds blue latex", gillAttachment: "Decurrent", sporeColor: "Pale yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/5280/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Lactarius_indigo_48568.jpg/400px-Lactarius_indigo_48568.jpg",
+    imageAttribution: "© Rémi Mathis / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245800,
     rarity: 45,
@@ -735,6 +766,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The only blue mushroom you can reliably eat; its indigo-blue latex comes from unique sesquiterpene pigments — unrelated to any other known blue compound in nature.",
   },
+
 
 
 {
@@ -749,8 +781,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and conifer forests wherever Russula and Lactarius occur",
     naRange: "Widespread across North America",
     morphology: { capShape: "The Russula or Lactarius host is encased in bright orange crust, distorting original shape", gillAttachment: "None visible (host encased)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/31748/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hypomyces_lactifluorum.jpg/400px-Hypomyces_lactifluorum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3269897,
     rarity: 35,
@@ -758,6 +790,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Technically the lobster mushroom is two organisms — the ascomycete parasite Hypomyces attacking a Russula or Lactarius host.",
   },
+
 
 
 {
@@ -772,8 +805,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed woodlands, gardens, wood chip mulch",
     naRange: "Widespread across North America",
     morphology: { capShape: "White spongy stalk topped with green-black foul-smelling spore mass (gleba)", gillAttachment: "None (gleba)", sporeColor: "Olive-green", hasRing: false, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/26044/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Phallus_impudicus.jpg/400px-Phallus_impudicus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553002,
     rarity: 20,
@@ -781,6 +814,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Its rank odor mimics rotting flesh to attract flies and beetles that disperse its spores; it can be detected from 30 meters away.",
   },
+
 
 
 {
@@ -795,8 +829,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Gardens, disturbed areas, wood chip mulch; Mediterranean origin",
     naRange: "Introduced; found along Pacific and Atlantic coasts of the US",
     morphology: { capShape: "Lattice cage of bright red arms emerging from egg, holding smelly brown gleba", gillAttachment: "None (gleba)", sporeColor: "Olive-green", hasRing: false, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1071174/medium.jpg",
-    imageAttribution: "© naturgucker.de / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Clathrus_ruber.jpg/400px-Clathrus_ruber.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553020,
     rarity: 55,
@@ -804,6 +838,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Possibly the most alien-looking fungus in temperate regions — the red cage structure is designed to display its spore mass to insects.",
   },
+
 
 
 {
@@ -818,8 +853,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Woodland paths, forest edges, and grassy areas",
     naRange: "Very common across all of North America",
     morphology: { capShape: "Pear-shaped, white with pyramid-shaped spines that leave a patterned scar", gillAttachment: "None (puffball)", sporeColor: "Olive-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/19694/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lycoperdon_perlatum.jpg/400px-Lycoperdon_perlatum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2552980,
     rarity: 10,
@@ -827,6 +862,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Only eat puffballs when the interior is pure white — once they turn yellow or show a developing mushroom inside, they are past their prime.",
   },
+
 
 
 {
@@ -841,8 +877,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Meadows, fields, open woods, and lawns",
     naRange: "Widespread across temperate North America",
     morphology: { capShape: "Spherical, pure white when young, smooth surface; can grow to 1.5 feet across", gillAttachment: "None (puffball)", sporeColor: "Olive-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/159843/medium.jpg",
-    imageAttribution: "© BJ Stacey / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Calvatia_gigantea.jpg/400px-Calvatia_gigantea.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2552976,
     rarity: 30,
@@ -850,6 +886,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "A single giant puffball contains an estimated 7 trillion spores — if each one germinated, they would cover the earth twice over.",
   },
+
 
 
 {
@@ -864,8 +901,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Sandy and disturbed woodland soils, heathland",
     naRange: "Common in eastern and Pacific coastal North America",
     morphology: { capShape: "Round, yellowish-tan with thick warty skin; interior dark purple-black when mature", gillAttachment: "None (puffball-like)", sporeColor: "Brown-black", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3443/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Scleroderma_citrinum.jpg/400px-Scleroderma_citrinum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2552820,
     rarity: 20,
@@ -873,6 +910,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Dangerous to confuse with edible puffballs — its interior is always dark purple (puffballs are white inside when edible).",
   },
+
 
 
 {
@@ -887,8 +925,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Conifer and deciduous forests with birch and beech",
     naRange: "Northern and western North America",
     morphology: { capShape: "Convex, deep violet throughout with cobweb-like cortina veil", gillAttachment: "Adnate", sporeColor: "Rusty brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/22043/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Cortinarius_violaceus.jpg/400px-Cortinarius_violaceus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534671,
     rarity: 50,
@@ -896,6 +934,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Cortinarius is the largest genus of fungi with over 2,000 species; several species in the Orellani group produce orellanine, a kidney-destroying toxin that may take weeks to cause symptoms.",
   },
+
 
 
 {
@@ -910,8 +949,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Pine forests, especially lodgepole and ponderosa pine, often in sandy soil",
     naRange: "Pacific Northwest and Rocky Mountains; less common in the East",
     morphology: { capShape: "Broadly convex, white to tan with cottony scales, cottony veil", gillAttachment: "Adnate to notched", sporeColor: "White", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1700296/medium.jpg",
-    imageAttribution: "© Christian Schwarz / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Tricholoma_magnivelare.jpg/400px-Tricholoma_magnivelare.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5955049,
     rarity: 55,
@@ -919,6 +958,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Highly prized in Japan as the world's most expensive mushroom; its spicy cinnamon-like fragrance is immediately distinctive.",
   },
+
 
 
 {
@@ -933,8 +973,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dead and dying hardwood trees, especially beech, oak, and elm",
     naRange: "Very common across all of North America",
     morphology: { capShape: "Fan to oyster-shaped, grey to tan, white decurrent gills below", gillAttachment: "Decurrent", sporeColor: "Lilac-white", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/5399/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pleurotus_ostreatus.jpg/400px-Pleurotus_ostreatus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534896,
     rarity: 15,
@@ -942,6 +982,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Oyster mushrooms are carnivorous — they paralyze nematodes with a toxin from specialized cells and digest them for extra nitrogen.",
   },
+
 
 
 {
@@ -956,8 +997,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dead and decaying broadleaf trees, especially chinquapin in native range; cultivated globally",
     naRange: "Native to East Asia; widely cultivated in North America",
     morphology: { capShape: "Convex, brown with white scales on margin, white gills", gillAttachment: "Adnate", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Lentinus_edodes.jpg/400px-Lentinus_edodes.jpg",
-    imageAttribution: "© Cephas / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Shiitake_J2.jpg/400px-Shiitake_J2.jpg",
+    imageAttribution: "© THOR / CC BY 2.0",
     crossSectionUrl: null,
     gbifId: 2534851,
     rarity: 20,
@@ -965,6 +1006,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Shiitake contain lentinan, an immunostimulant approved as an antitumor drug in Japan; they are the second most cultivated mushroom globally.",
   },
+
 
 
 {
@@ -979,8 +1021,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead hardwood branches; parasitizes other fungi (Peniophora species)",
     naRange: "Widespread across North America",
     morphology: { capShape: "Yellow-orange gelatinous lobes, brain or ribbon-like", gillAttachment: "None (jelly)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/8117/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tremella_mesenterica.jpg/400px-Tremella_mesenterica.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2514898,
     rarity: 20,
@@ -988,6 +1030,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "It is not actually saprotrophic — it parasitizes the mycelium of crust fungi (Peniophora) that are decomposing the wood it appears on.",
   },
+
 
 
 {
@@ -1002,8 +1045,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead elder (Sambucus) and other hardwoods",
     naRange: "Common across North America",
     morphology: { capShape: "Ear-shaped, gelatinous, brown, smooth above and finely hairy below", gillAttachment: "None (jelly)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/6428/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Auricularia_auricula-judae.jpg/400px-Auricularia_auricula-judae.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2514793,
     rarity: 15,
@@ -1011,6 +1054,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The primary fungus in hot-and-sour soup and many Asian dishes; it is cultivated globally and has anticoagulant properties.",
   },
+
 
 
 {
@@ -1025,8 +1069,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead branches of oak and other hardwoods",
     naRange: "Widespread across temperate North America",
     morphology: { capShape: "Black, gelatinous irregular lumps covered in tiny warts", gillAttachment: "None (jelly)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/8481/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Exidia_glandulosa.jpg/400px-Exidia_glandulosa.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2514905,
     rarity: 25,
@@ -1034,6 +1078,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "In dry weather it shrivels to a nearly invisible crust and can resurrect itself with rain, earning it the name 'witches' butter'.",
   },
+
 
 
 {
@@ -1048,8 +1093,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On decaying conifer wood and lumber",
     naRange: "Very common across all of North America",
     morphology: { capShape: "Orange, gelatinous cushion to wavy lobes", gillAttachment: "None (jelly)", sporeColor: "Yellow-orange", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/13862/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Dacrymyces_chrysospermus.jpg/400px-Dacrymyces_chrysospermus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2514857,
     rarity: 15,
@@ -1057,6 +1102,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Unlike most jelly fungi, Dacrymycetes are confirmed to be more closely related to mushrooms than to tremelloid fungi.",
   },
+
 
 
 {
@@ -1071,8 +1117,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On corn (Zea mays) ears and tassels; a crop pathogen",
     naRange: "Wherever corn is grown; native to North America",
     morphology: { capShape: "Silvery-grey galls on corn, turning black with spores at maturity", gillAttachment: "None (gall)", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Corn_smut_gall_Ustilago_maydis.jpg/400px-Corn_smut_gall_Ustilago_maydis.jpg",
-    imageAttribution: "© Rasbak / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ustilago_maydis.jpg/400px-Ustilago_maydis.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2510783,
     rarity: 20,
@@ -1080,6 +1126,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Known as 'huitlacoche' in Mexican cuisine, it is a prized delicacy called the 'Mexican truffle' with an earthy, sweet flavor.",
   },
+
 
 
 {
@@ -1094,8 +1141,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On wheat and barley stems; requires barberry (Berberis) as alternate host",
     naRange: "Historically throughout wheat-growing North America; eradicated from much of the US via barberry removal",
     morphology: { capShape: "Rust-orange pustules on stems and leaves", gillAttachment: "None (rust pustules)", sporeColor: "Orange to black", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Puccinia_graminis.jpg/400px-Puccinia_graminis.jpg",
-    imageAttribution: "© Yoder / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Puccinia_graminis.jpg/400px-Puccinia_graminis.jpg",
+    imageAttribution: "© USDA / Public Domain",
     crossSectionUrl: null,
     gbifId: 2563189,
     rarity: 30,
@@ -1103,6 +1150,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "This single pathogen triggered famines throughout history; the US eradicated millions of barberry shrubs in the 20th century to control it.",
   },
+
 
 
 {
@@ -1117,8 +1165,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Disturbed areas, old apple orchards, under dying elms, recently burned areas",
     naRange: "Eastern and midwestern North America; spring fruiting",
     morphology: { capShape: "Honeycomb-pitted cap (pits and ridges), hollow stem, entirely hollow inside", gillAttachment: "None (pitted ascoma)", sporeColor: "Cream-yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/30/medium.jpg",
-    imageAttribution: "© Ken-ichi Ueda / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Morchella_esculenta_01.jpg/400px-Morchella_esculenta_01.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268378,
     rarity: 40,
@@ -1126,6 +1174,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Morels are ascomycetes — they shoot their spores explosively from sac-like cells (asci) rather than bearing them on club-shaped basidia.",
   },
+
 
 
 {
@@ -1140,8 +1189,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Conifer forests, especially after fire; common in burn areas of the west",
     naRange: "Western and northern North America; spring fruiting",
     morphology: { capShape: "Elongated honeycomb cap with dark ridges and paler pits", gillAttachment: "None (pitted ascoma)", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/15696/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Morchella_elata_01.jpg/400px-Morchella_elata_01.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268382,
     rarity: 45,
@@ -1149,6 +1198,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Massive fruitings appear the spring after forest fires — burn morel hunting is a major seasonal activity in the Pacific Northwest.",
   },
+
 
 
 {
@@ -1163,8 +1213,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Sandy conifer forests, often under or near melting snow in spring",
     naRange: "Northern North America, especially Great Lakes region and Rocky Mountains",
     morphology: { capShape: "Brain-like, lobed and convoluted, red-brown, not honeycomb-pitted", gillAttachment: "None (convoluted ascoma)", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3390/medium.jpg",
-    imageAttribution: "© Nathan Wilson / iNaturalist CC-BY-NC-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Gyromitra_esculenta.jpg/400px-Gyromitra_esculenta.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268350,
     rarity: 50,
@@ -1172,6 +1222,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Contains gyromitrin which converts to monomethylhydrazine (rocket fuel component) in the body; has caused deaths even after cooking.",
   },
+
 
 
 {
@@ -1186,8 +1237,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed woods and forest paths, often appearing in disturbed soil",
     naRange: "Widespread across North America",
     morphology: { capShape: "Saddle or irregular lobed cap, grey to black; deeply ribbed hollow stalk", gillAttachment: "None (ascoma)", sporeColor: "Cream-white", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3574/medium.jpg",
-    imageAttribution: "© Nathan Wilson / iNaturalist CC-BY-NC-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Helvella_lacunosa.jpg/400px-Helvella_lacunosa.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268319,
     rarity: 40,
@@ -1195,6 +1246,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its deeply chambered hollow stalk is distinctive; related to morels but not choice edible — contains hydrazine toxins similar to false morels.",
   },
+
 
 
 {
@@ -1209,8 +1261,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead sticks and branches buried in moss and leaf litter, in winter or early spring",
     naRange: "Eastern North America and Pacific Northwest",
     morphology: { capShape: "Cup-shaped, brilliant scarlet inside, whitish outside", gillAttachment: "None (cup fungus)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3629/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sarcoscypha_coccinea.jpg/400px-Sarcoscypha_coccinea.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268468,
     rarity: 35,
@@ -1218,6 +1270,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of the first fungi to fruit in late winter; its brilliant red cup is a vivid surprise against snow or brown leaf litter.",
   },
+
 
 
 {
@@ -1232,8 +1285,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Calcareous soils under oak, hazelnut, and other trees",
     naRange: "Native to southern Europe; cultivated in limited orchards in Oregon, North Carolina, and elsewhere in North America",
     morphology: { capShape: "Black warty hypogeous (underground) rounded body; white-marbled interior", gillAttachment: "None (hypogeous ascoma)", sporeColor: "Dark brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Black_Truffle_%28Tuber_melanosporum%29.jpg/400px-Black_Truffle_%28Tuber_melanosporum%29.jpg",
-    imageAttribution: "© Romain Behar / Wikimedia Commons CC0",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Tuber_melanosporum.jpg/400px-Tuber_melanosporum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268537,
     rarity: 85,
@@ -1241,6 +1294,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Sells for over $1,000 per pound and dogs or pigs are trained to sniff them out underground; their aroma is caused by androstenol — a compound also found in human sweat.",
   },
+
 
 
 {
@@ -1255,8 +1309,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Parasitizes moth or butterfly pupae buried in forest soil",
     naRange: "Widespread across North America",
     morphology: { capShape: "Orange club-like stalk emerging from buried insect pupa", gillAttachment: "None (club)", sporeColor: "Orange", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/8600/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cordyceps_militaris.jpg/400px-Cordyceps_militaris.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3269853,
     rarity: 55,
@@ -1264,6 +1318,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Studied intensively for cordycepin, a compound that shows anticancer and antiviral activity in laboratory studies.",
   },
+
 
 
 {
@@ -1278,8 +1333,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Tropical and subtropical forests; infects Camponotus carpenter ants",
     naRange: "Southeastern US, Central America, and tropics worldwide",
     morphology: { capShape: "Orange club erupting from ant head after host death", gillAttachment: "None (club)", sporeColor: "Orange", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ophiocordyceps_unilateralis.jpg/400px-Ophiocordyceps_unilateralis.jpg",
-    imageAttribution: "© João Araújo / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Ophiocordyceps_unilateralis.jpg/400px-Ophiocordyceps_unilateralis.jpg",
+    imageAttribution: "© David Hughes / CC BY 2.5",
     crossSectionUrl: null,
     gbifId: 3269852,
     rarity: 70,
@@ -1287,6 +1342,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "It hijacks ant behavior — compelling infected ants to climb vegetation and clamp down before killing them, optimizing spore dispersal.",
   },
+
 
 
 {
@@ -1301,8 +1357,8 @@ export const FUNGI: Fungus[] = [
     habitat: "At the base of decaying hardwood stumps and buried roots",
     naRange: "Very common across eastern and Pacific coast North America",
     morphology: { capShape: "Blackened, finger-like clubs, sometimes branched; white interior", gillAttachment: "None (stromata)", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/9135/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Xylaria_polymorpha.jpg/400px-Xylaria_polymorpha.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3269994,
     rarity: 25,
@@ -1310,6 +1366,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Its charcoal-like black exterior hides spore-producing pockets (perithecia) embedded in the surface — you can see them as tiny dots.",
   },
+
 
 
 {
@@ -1324,8 +1381,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead twigs and branches of deciduous trees",
     naRange: "Common across eastern and Pacific coast North America",
     morphology: { capShape: "Tiny bright pink-red pustules (stromata) on bark", gillAttachment: "None (stromata)", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/16044/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Nectria_cinnabarina.jpg/400px-Nectria_cinnabarina.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3269924,
     rarity: 15,
@@ -1333,6 +1390,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Often seen on recently dead maple branches — the pink pustules are the asexual stage; darker red ones are the sexual (perfect) stage.",
   },
+
 
 
 {
@@ -1347,8 +1405,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On decaying logs and branches of hardwoods in moist woodland",
     naRange: "Common across temperate North America",
     morphology: { capShape: "Tiny blue-green cup fungi, stalked; stains wood vivid blue-green", gillAttachment: "None (cup)", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/44862/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Chlorociboria_aeruginascens.jpg/400px-Chlorociboria_aeruginascens.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268645,
     rarity: 30,
@@ -1356,6 +1414,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its xylindein pigment stains wood a stunning turquoise-blue; this 'green oak' wood was prized by Renaissance intarsia craftsmen.",
   },
+
 
 
 {
@@ -1370,8 +1429,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Decaying organic matter, stored foods, damp buildings; ubiquitous globally",
     naRange: "Ubiquitous across all of North America",
     morphology: { capShape: "Black powdery colonies of conidia on food or substrate", gillAttachment: "None (conidial mold)", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Aspergillus_niger_01.jpg/400px-Aspergillus_niger_01.jpg",
-    imageAttribution: "© Medmyco / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Aspergillus_niger.jpg/400px-Aspergillus_niger.jpg",
+    imageAttribution: "© Ninjatacoshell / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5244784,
     rarity: 5,
@@ -1379,6 +1438,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Used industrially to produce citric acid — nearly all the citric acid in your food and drinks is fermented from sugar by Aspergillus niger.",
   },
+
 
 
 {
@@ -1393,8 +1453,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Decaying food, damp buildings, soil; cosmopolitan",
     naRange: "Ubiquitous across all of North America",
     morphology: { capShape: "Blue-green powdery colonies with white border", gillAttachment: "None (conidial mold)", sporeColor: "Blue-green", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Penicillium_embryo_4.jpg/400px-Penicillium_embryo_4.jpg",
-    imageAttribution: "© Medmyco / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Penicillin_Past_Present_Future-William_Pfeiffer.jpg/400px-Penicillin_Past_Present_Future-William_Pfeiffer.jpg",
+    imageAttribution: "© US Navy / Public Domain",
     crossSectionUrl: null,
     gbifId: 5244823,
     rarity: 5,
@@ -1402,6 +1462,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Alexander Fleming's famous 1928 accident — noticing this mold killing bacteria on a culture plate — led directly to the discovery of penicillin.",
   },
+
 
 
 {
@@ -1416,8 +1477,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Bread, fruit, and other starchy foods; cosmopolitan",
     naRange: "Ubiquitous across all of North America",
     morphology: { capShape: "White cottony mycelium topped with black sporangia (spore sacs)", gillAttachment: "None (sporangial mold)", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Rhizopus_stolonifer_01.jpg/400px-Rhizopus_stolonifer_01.jpg",
-    imageAttribution: "© Medmyco / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rhizopus_stolonifer.jpg/400px-Rhizopus_stolonifer.jpg",
+    imageAttribution: "© Bob Blaylock / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3267680,
     rarity: 5,
@@ -1425,6 +1486,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "A major post-harvest pathogen of fruits and bread; related Rhizopus species are used in Asian fermentation (tempeh, rice wine), but R. stolonifer itself is best known as the common 'black bread mold'.",
   },
+
 
 
 {
@@ -1439,8 +1501,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dung, decaying plant matter, stored grain; cosmopolitan",
     naRange: "Ubiquitous across all of North America",
     morphology: { capShape: "White fluffy mycelium with grey-black round sporangia on upright stalks", gillAttachment: "None (sporangial mold)", sporeColor: "Grey", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Mucor_mucedo.jpg/400px-Mucor_mucedo.jpg",
-    imageAttribution: "© Mikael Häggström / Wikimedia Commons CC0",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mucor_mucedo.jpg/400px-Mucor_mucedo.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3267690,
     rarity: 10,
@@ -1448,6 +1510,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Mucor and its relatives represent a very ancient fungal lineage; they reproduce sexually by fusing two mating types to form a thick-walled zygospore.",
   },
+
 
 
 {
@@ -1462,8 +1525,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and deciduous forests with beech and oak",
     naRange: "Eastern North America and Pacific Northwest",
     morphology: { capShape: "Branching coral, salmon-pink to pale orange with yellow tips", gillAttachment: "None (coral)", sporeColor: "Ochre-yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/14033/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Ramaria_formosa.jpg/400px-Ramaria_formosa.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553783,
     rarity: 45,
@@ -1471,6 +1534,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its beautiful appearance it causes significant gastrointestinal symptoms; the Ramaria genus requires expert identification to eat safely.",
   },
+
 
 
 {
@@ -1485,8 +1549,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous woods and gardens, in leaf litter and wood chips",
     naRange: "Eastern North America",
     morphology: { capShape: "Slender orange-pink stalk with greenish-brown slime cap; no distinct head", gillAttachment: "None (gleba)", sporeColor: "Olive-green", hasRing: false, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/23029/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Mutinus_caninus.jpg/400px-Mutinus_caninus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553011,
     rarity: 40,
@@ -1494,6 +1558,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Like all stinkhorns, it begins as an underground 'egg'; the name refers to its resemblance to a dog's body part.",
   },
+
 
 
 {
@@ -1508,8 +1573,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dead tropical and subtropical hardwoods; widely cultivated",
     naRange: "Tropical and subtropical regions of southeastern US; commonly cultivated throughout North America",
     morphology: { capShape: "Fan-shaped, vivid pink to salmon when young, fading white with age", gillAttachment: "Decurrent", sporeColor: "White to lilac", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pink_oyster_mushroom.jpg/400px-Pink_oyster_mushroom.jpg",
-    imageAttribution: "© Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pleurotus_djamor.jpg/400px-Pleurotus_djamor.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534901,
     rarity: 25,
@@ -1517,6 +1582,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Among the fastest-growing cultivated fungi — a fruiting block can produce mushrooms in as little as 5–7 days after pinning.",
   },
+
 
 
 {
@@ -1531,8 +1597,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On decaying hardwoods and conifers, especially beech and maple",
     naRange: "Widespread across North America",
     morphology: { capShape: "Large grey-brown shelf bracket, white pore surface that browns permanently when scratched", gillAttachment: "Tiny pores below", sporeColor: "Brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/7285/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ganoderma_applanatum.jpg/400px-Ganoderma_applanatum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989127,
     rarity: 20,
@@ -1540,6 +1606,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The white pore surface permanently shows brown marks, making it a natural canvas; artists have drawn intricate pictures on fresh brackets.",
   },
+
 
 
 {
@@ -1565,6 +1632,7 @@ export const FUNGI: Fungus[] = [
   },
 
 
+
 {
     id: "meripilus-giganteus",
     scientificName: "Meripilus sumstinei",
@@ -1588,6 +1656,7 @@ export const FUNGI: Fungus[] = [
   },
 
 
+
 {
     id: "chroogomphus-rutilus",
     scientificName: "Chroogomphus rutilus",
@@ -1600,8 +1669,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Pine forests; often near Suillus species",
     naRange: "Western and northern North America",
     morphology: { capShape: "Conical to broad, orange-wine-brown, waxy; gills widely spaced, decurrent", gillAttachment: "Decurrent", sporeColor: "Dark grey", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/118034/medium.jpg",
-    imageAttribution: "© Christian Schwarz / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Chroogomphus_rutilus.jpg/400px-Chroogomphus_rutilus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5954028,
     rarity: 40,
@@ -1609,6 +1678,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "May hyperparasitize — it fruits near Suillus (slippery jacks) and may tap into their mycorrhizal network to get carbohydrates from the tree.",
   },
+
 
 
 {
@@ -1623,8 +1693,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and conifer forests with Douglas fir, pine, and oak",
     naRange: "Pacific Northwest and Rocky Mountains; also eastern North America",
     morphology: { capShape: "Brown with white warts in concentric rows, volva, ring", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3267/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Amanita_pantherina.jpg/400px-Amanita_pantherina.jpg",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284033,
     rarity: 45,
@@ -1632,6 +1702,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "More toxic per gram than A. muscaria because it contains ibotenic acid and muscimol in higher concentrations; causes severe intoxication.",
   },
+
 
 
 {
@@ -1646,8 +1717,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and deciduous forests with oak, birch, and pine",
     naRange: "Eastern North America and Pacific Northwest",
     morphology: { capShape: "Reddish-brown cap with pale pinkish warts; flesh reddens (blushes) when cut", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/8422/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Amanita_rubescens.jpg/400px-Amanita_rubescens.jpg",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284048,
     rarity: 30,
@@ -1655,6 +1726,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of the few edible Amanitas, but it must be well cooked — raw specimens contain haemolysin that destroys red blood cells.",
   },
+
 
 
 {
@@ -1680,6 +1752,7 @@ export const FUNGI: Fungus[] = [
   },
 
 
+
 {
     id: "cantharellus-lateritius",
     scientificName: "Cantharellus lateritius",
@@ -1692,8 +1765,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Eastern hardwood forests, especially oak-hickory, often in large troops",
     naRange: "Eastern North America, particularly common in the Southeast",
     morphology: { capShape: "Convex with wavy margin, orange-yellow; fertile surface nearly smooth (few ridges)", gillAttachment: "Smooth to weakly ridged", sporeColor: "Pale yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3098060/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cantharellus_lateritius.jpg/400px-Cantharellus_lateritius.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553668,
     rarity: 25,
@@ -1701,6 +1774,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most commercially harvested wild mushrooms in the southeastern US; fruits in large numbers after summer rains.",
   },
+
 
 
 {
@@ -1715,8 +1789,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dead and dying elm, ash, and other hardwoods; fruits in winter",
     naRange: "Widespread across North America; one of the few cold-tolerant species",
     morphology: { capShape: "Convex, shiny orange-brown, viscid; velvety dark brown stalk", gillAttachment: "Adnexed", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flammulina_velutipes.jpg/400px-Flammulina_velutipes.jpg",
-    imageAttribution: "© Stu's Images / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Flammulina_velutipes.jpg/400px-Flammulina_velutipes.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2535024,
     rarity: 25,
@@ -1724,6 +1798,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "The cultivated enoki mushroom is a light-deprived domesticated form of this species — grown in the dark to produce long white stems.",
   },
+
 
 
 {
@@ -1738,8 +1813,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On wounds of living hardwood trees, especially oak and beech",
     naRange: "Eastern North America; also Pacific Northwest",
     morphology: { capShape: "White cascading mass of downward-pointing icicle-like spines; no cap", gillAttachment: "Spines/teeth", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/1241/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Hericium_erinaceus.jpg/400px-Hericium_erinaceus.jpg",
+    imageAttribution: "© Ak ccm / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553569,
     rarity: 50,
@@ -1747,6 +1822,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Contains hericenones and erinacines that stimulate nerve growth factor — studied as a potential therapy for neurological conditions.",
   },
+
 
 
 {
@@ -1761,8 +1837,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Clustered at the base of hardwoods and stumps, especially oak",
     naRange: "Eastern North America (O. illudens); western North America has the closely related O. olivascens",
     morphology: { capShape: "Convex to flat, bright orange with crowded gills; entire mushroom glows faintly in the dark", gillAttachment: "Decurrent", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/17293/medium.jpg",
-    imageAttribution: "© Katja Schulz / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Omphalotus_illudens.jpg/400px-Omphalotus_illudens.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2535075,
     rarity: 30,
@@ -1770,6 +1846,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Its gills produce bioluminescence — a faint green glow visible in complete darkness — caused by the same biochemical pathway as fireflies.",
   },
+
 
 
 {
@@ -1784,8 +1861,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On decaying hardwood logs and stumps",
     naRange: "Very common across North America",
     morphology: { capShape: "Convex to flat, grey-brown with streaked surface; pink gills at maturity", gillAttachment: "Free", sporeColor: "Pink", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/16741/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pluteus_cervinus.jpg/400px-Pluteus_cervinus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534940,
     rarity: 15,
@@ -1793,6 +1870,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its pink spore print and free gills are reliable ID features — the pink gills develop as spores mature, turning the initially white gills rosy.",
   },
+
 
 
 {
@@ -1807,8 +1885,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Lawns, roadsides, disturbed areas, often near human habitation",
     naRange: "Widespread across North America",
     morphology: { capShape: "White convex cap that stains bright chrome-yellow at base when cut; smells of ink", gillAttachment: "Free", sporeColor: "Dark brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/11893/medium.jpg",
-    imageAttribution: "© Christian Schwarz / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Agaricus_xanthodermus.jpg/400px-Agaricus_xanthodermus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5246627,
     rarity: 20,
@@ -1816,6 +1894,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Commonly confused with the edible field mushroom; the instant bright yellow staining at the base and chemical (ink) smell are reliable warnings.",
   },
+
 
 
 {
@@ -1830,8 +1909,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mossy conifer forests, often in large troops near sphagnum",
     naRange: "Pacific Northwest and northern North America; common in fall",
     morphology: { capShape: "Small, funnel-shaped, grey-brown cap with yellow hollow stalk and blunt forked ridges", gillAttachment: "Decurrent ridges", sporeColor: "Pale", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/53014/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cantharellus_tubaeformis.jpg/400px-Cantharellus_tubaeformis.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553658,
     rarity: 35,
@@ -1839,6 +1918,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Fruits in autumn through early winter in the Pacific Northwest; an important commercial species harvested for export to Europe.",
   },
+
 
 
 {
@@ -1853,8 +1933,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Under Monterey pine and other coastal pines",
     naRange: "Pacific Coast, especially California coast with Monterey pine",
     morphology: { capShape: "Grey-brown slimy cap; white to grey pores; has distinct 'chemical' or sour smell", gillAttachment: "Tubes/pores", sporeColor: "Cinnamon-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/39895/medium.jpg",
-    imageAttribution: "© Christian Schwarz / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Suillus_pungens.jpg/400px-Suillus_pungens.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5953929,
     rarity: 40,
@@ -1862,6 +1942,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "insane",
     funFact: "Its pungent chemical odor is distinctive and often described as metallic or like a permanent marker — useful for field identification.",
   },
+
 
 
 {
@@ -1876,8 +1957,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Grasslands, gardens, roadsides, and disturbed areas",
     naRange: "Common across North America",
     morphology: { capShape: "White convex to flat, smooth; white free gills; ring; pink to pale spore print", gillAttachment: "Free", sporeColor: "White to pale pink", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/14832/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Leucoagaricus_leucothites.jpg/400px-Leucoagaricus_leucothites.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534772,
     rarity: 25,
@@ -1885,6 +1966,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "insane",
     funFact: "Resembles the deadly Amanita bisporigera but lacks a volva (basal cup) — always check the base before eating any all-white mushroom.",
   },
+
 
 
 {
@@ -1899,8 +1981,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Conifer forests, especially under fir and spruce",
     naRange: "Western North America, Pacific Northwest to Rocky Mountains",
     morphology: { capShape: "Club-shaped, flattened or truncated top, tan to ochre, wrinkled surface", gillAttachment: "None (club)", sporeColor: "White to pale cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/2034671/medium.jpg",
-    imageAttribution: "© Christian Schwarz / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Clavariadelphus_truncatus.jpg/400px-Clavariadelphus_truncatus.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553799,
     rarity: 50,
@@ -1908,6 +1990,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "insane",
     funFact: "Unlike branching corals, this species is a single unbranched club; the distinctly flattened top separates it from similar species.",
   },
+
 
 
 {
@@ -1922,8 +2005,8 @@ export const FUNGI: Fungus[] = [
     habitat: "In dense clusters on decaying wood stumps and logs",
     naRange: "Common across all of North America",
     morphology: { capShape: "Pear-shaped, pale tan becoming brown, covered in granular surface; opens by apical pore", gillAttachment: "None (puffball)", sporeColor: "Olive-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/19700/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lycoperdon_pyriforme.jpg/400px-Lycoperdon_pyriforme.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2552983,
     rarity: 15,
@@ -1931,6 +2014,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The only wood-growing true puffball — its white cord-like mycelial strands connect it to buried wood that it decomposes.",
   },
+
 
 
 {
@@ -1945,8 +2029,8 @@ export const FUNGI: Fungus[] = [
     habitat: "At the base of conifers, especially pine and Douglas fir; causes brown rot",
     naRange: "Widespread across North America",
     morphology: { capShape: "Overlapping rusty-orange to brown zonate shelves, spongy when young; yellow green margin", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/16455/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Phaeolus_schweinitzii.jpg/400px-Phaeolus_schweinitzii.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989268,
     rarity: 40,
@@ -1954,6 +2038,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Historically used by weavers to dye wool in rich golden, green, and brown tones depending on mordant — hence the common name.",
   },
+
 
 
 {
@@ -1968,8 +2053,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Woodland edges, meadows, roadsides, and pastures",
     naRange: "Eastern North America; introduced in Pacific Northwest",
     morphology: { capShape: "Egg-shaped opening to flat, brown scaly cap on tall stalk with snakeskin pattern", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Macrolepiota_procera.jpg/400px-Macrolepiota_procera.jpg",
-    imageAttribution: "© Archenzo / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Macrolepiota_procera.jpg/400px-Macrolepiota_procera.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534714,
     rarity: 35,
@@ -1977,6 +2062,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of the tallest mushrooms in Europe — individual specimens can reach 40 cm tall with a cap diameter of 30 cm.",
   },
+
 
 {
     id: "galerina-marginata",
@@ -1990,8 +2076,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On decaying conifer logs and wood chips, often in clusters",
     naRange: "Widespread across North America; very common in Pacific Northwest",
     morphology: { capShape: "Convex, tawny-brown, hygrophanous; ring present; rusty-brown spore print", gillAttachment: "Adnate", sporeColor: "Rusty brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/13948/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Galerina_marginata.jpg/400px-Galerina_marginata.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 4934557,
     rarity: 30,
@@ -1999,6 +2085,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Contains the same deadly amatoxins as the Death Cap; frequently confused with the edible Kuehneromyces mutabilis — a mistake that kills.",
   },
+
 
 {
     id: "lepista-nuda",
@@ -2012,8 +2099,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and deciduous woodland, gardens, compost heaps; often in leaf litter",
     naRange: "Widespread across North America; common in late autumn",
     morphology: { capShape: "Convex to flat, violet-lilac to buff-brown, smooth; lilac gills and stalk", gillAttachment: "Adnate", sporeColor: "Pale pink", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/34059/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lepista_nuda.jpg/400px-Lepista_nuda.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534813,
     rarity: 35,
@@ -2021,6 +2108,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "One of few mushrooms where the entire fruiting body — cap, gills, and stalk — is blue-violet when fresh; the color fades with age.",
   },
+
 
 {
     id: "clitocybe-nebularis",
@@ -2034,8 +2122,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed woodland, often in large rings in leaf litter",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex with inrolled margin, pale grey-brown with white pruina; gills crowded, decurrent", gillAttachment: "Decurrent", sporeColor: "Pale cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/47028/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Clitocybe_nebularis.jpg/400px-Clitocybe_nebularis.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534738,
     rarity: 30,
@@ -2043,6 +2131,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its strong, sweet-soapy smell is distinctive and off-putting; it is also often parasitized by the small fungus Volvariella surrecta.",
   },
+
 
 {
     id: "mycena-galericulata",
@@ -2056,8 +2145,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Clustered on dead hardwood stumps and logs",
     naRange: "Very common across North America",
     morphology: { capShape: "Bell-shaped, grey-brown with striate margin; crowded pale gills", gillAttachment: "Adnate with decurrent tooth", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/21030/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mycena_galericulata.jpg/400px-Mycena_galericulata.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534987,
     rarity: 10,
@@ -2065,6 +2154,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most abundant wood-rotting species in temperate forests; a single stump may host hundreds of caps.",
   },
+
 
 {
     id: "inocybe-geophylla",
@@ -2078,8 +2168,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and conifer woodlands, on paths and in grass near trees",
     naRange: "Common across North America",
     morphology: { capShape: "Conical to flat, white, silky-fibrous; gills initially white, browning", gillAttachment: "Adnate", sporeColor: "Brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/31023/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Inocybe_geophylla.jpg/400px-Inocybe_geophylla.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534659,
     rarity: 25,
@@ -2087,6 +2177,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Contains muscarine in concentrations high enough to cause cholinergic poisoning; all white-capped Inocybe species should be treated as toxic.",
   },
+
 
 {
     id: "entoloma-sinuatum",
@@ -2100,8 +2191,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous woodland, especially with oak and beech, on calcareous soils",
     naRange: "Eastern North America; primarily a European species",
     morphology: { capShape: "Broadly convex, ivory to grey-white; gills initially yellowish, becoming pink", gillAttachment: "Sinuate", sporeColor: "Pink", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/76490/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Entoloma_sinuatum.jpg/400px-Entoloma_sinuatum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534583,
     rarity: 45,
@@ -2109,6 +2200,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most poisonous European fungi — responsible for severe gastroenteritis outbreaks when confused with edible species.",
   },
+
 
 {
     id: "tricholoma-terreum",
@@ -2122,8 +2214,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Conifer forests, especially under pine and spruce",
     naRange: "Northern and western North America",
     morphology: { capShape: "Convex to flat, grey with dark fibrous scales; white gills", gillAttachment: "Sinuate", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/53340/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Tricholoma_terreum.jpg/400px-Tricholoma_terreum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534816,
     rarity: 30,
@@ -2131,6 +2223,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Formerly considered a good edible, but recent research suggests some populations contain toxins — caution is now advised.",
   },
+
 
 {
     id: "stropharia-aeruginosa",
@@ -2144,8 +2237,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Woodland, grassland, gardens, on soil or decaying wood",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex, vivid blue-green with white veil remnants; slimy when wet", gillAttachment: "Adnate", sporeColor: "Purple-brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/27043/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Stropharia_aeruginosa.jpg/400px-Stropharia_aeruginosa.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534440,
     rarity: 35,
@@ -2153,6 +2246,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its startling blue-green color comes from a unique pigment — the cap fades to yellow with age as the pigment degrades.",
   },
+
 
 {
     id: "kuehneromyces-mutabilis",
@@ -2166,8 +2260,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Clustered on decaying stumps and logs of deciduous trees",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex, hygrophanous — dark brown when wet, drying pale tan from center outward", gillAttachment: "Adnate", sporeColor: "Rusty brown", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/42130/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kuehneromyces_mutabilis.jpg/400px-Kuehneromyces_mutabilis.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534419,
     rarity: 30,
@@ -2175,6 +2269,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Dangerously confused with the deadly Galerina marginata — both are brown, ringed, and grow in clusters on wood.",
   },
+
 
 {
     id: "volvariella-volvacea",
@@ -2188,8 +2283,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On rice straw and other agricultural waste in tropical regions; widely cultivated",
     naRange: "Tropical and subtropical; cultivated in southeastern US",
     morphology: { capShape: "Grey-brown egg emerging from white volva; flat to convex at maturity; pink gills", gillAttachment: "Free", sporeColor: "Pink", hasRing: false, hasVolva: true },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Volvariella_volvacea_EM.jpg/400px-Volvariella_volvacea_EM.jpg",
-    imageAttribution: "© EEKA / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Volvariella_volvacea.jpg/400px-Volvariella_volvacea.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534949,
     rarity: 40,
@@ -2197,6 +2292,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The third most cultivated mushroom globally; it must be eaten when immature (still in the egg stage) as it resembles deadly Amanitas when mature.",
   },
+
 
 {
     id: "panaeolus-cinctulus",
@@ -2210,8 +2306,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Dung-enriched grassland, compost, and manured soil",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex, hygrophanous cinnamon-brown drying tan; dark marginal band when moist", gillAttachment: "Adnate", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/29830/medium.jpg",
-    imageAttribution: "© Alan Rockefeller / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Panaeolus_cinctulus.jpg/400px-Panaeolus_cinctulus.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534389,
     rarity: 30,
@@ -2219,6 +2315,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Contains psilocybin; one of the most widespread psilocybin-containing fungi globally, found on every inhabited continent.",
   },
+
 
 {
     id: "amanita-fulva",
@@ -2232,8 +2329,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed forests with birch and oak",
     naRange: "Widespread across North America",
     morphology: { capShape: "Bell-shaped to convex, tawny-orange, striate margin, no ring", gillAttachment: "Free", sporeColor: "White", hasRing: false, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/13024/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Amanita_fulva.jpg/400px-Amanita_fulva.jpg",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284023,
     rarity: 35,
@@ -2241,6 +2338,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Grisettes are Amanitas without a ring — they fruit from an egg-like volva and the stipe has no annulus, making them easier to identify.",
   },
+
 
 {
     id: "amanita-vaginata",
@@ -2254,8 +2352,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and deciduous forests; birch, oak, and alder",
     naRange: "Common across North America",
     morphology: { capShape: "Bell-shaped to convex, grey with striate margin and prominent grey volva; no ring", gillAttachment: "Free", sporeColor: "White", hasRing: false, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3564/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Amanita_vaginata.jpg/400px-Amanita_vaginata.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284059,
     rarity: 35,
@@ -2263,6 +2361,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Must be well cooked before eating — like most Amanitas, it is significantly more digestible when heated through completely.",
   },
+
 
 {
     id: "amanita-virosa",
@@ -2276,8 +2375,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Mixed and conifer forests in Europe and North America",
     naRange: "Northern North America; primarily a European species",
     morphology: { capShape: "Convex, pure white; slimy cap, ring, and large cup-shaped volva", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Amanita_virosa.jpg/400px-Amanita_virosa.jpg",
-    imageAttribution: "© Tomasz Przechlewski / Wikimedia Commons CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Amanita_virosa.jpg/400px-Amanita_virosa.jpg",
+    imageAttribution: "© Archenzo / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284061,
     rarity: 55,
@@ -2285,6 +2384,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Contains the same lethal amatoxins as A. phalloides; the all-white form makes it especially dangerous when misidentified as an edible species.",
   },
+
 
 {
     id: "amanita-citrina",
@@ -2298,8 +2398,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed forests; oak and beech",
     naRange: "Eastern North America and Pacific Northwest",
     morphology: { capShape: "Convex, pale lemon-yellow, with flat pale patches; distinctive raw potato smell", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: true },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/8560/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Amanita_citrina.jpg/400px-Amanita_citrina.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5284011,
     rarity: 30,
@@ -2307,6 +2407,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its scary name 'False Death Cap,' it is merely inedible — it smells of raw potatoes but lacks the deadly amatoxins of true death caps.",
   },
+
 
 {
     id: "lepiota-cristata",
@@ -2320,8 +2421,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Woodland paths, grass, gardens, and roadsides",
     naRange: "Common across North America",
     morphology: { capShape: "White convex cap with concentric reddish-brown scales; smells unpleasantly of rubber", gillAttachment: "Free", sporeColor: "White", hasRing: true, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/36890/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Lepiota_cristata.jpg/400px-Lepiota_cristata.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534692,
     rarity: 25,
@@ -2329,6 +2430,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Many small Lepiota species contain deadly amatoxins in concentrations that can be fatal even in small amounts — none should be eaten.",
   },
+
 
 {
     id: "mycena-haematopus",
@@ -2342,8 +2444,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On decaying hardwood logs and stumps, usually in clusters",
     naRange: "Very common across North America",
     morphology: { capShape: "Bell-shaped, wine-red to pinkish; bleeds deep red latex from broken stem", gillAttachment: "Adnate", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/7489/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Mycena_haematopus.jpg/400px-Mycena_haematopus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534997,
     rarity: 25,
@@ -2351,6 +2453,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The vivid red 'blood' that drips from a broken stem is caused by pigment-containing cells in the stem tissue, not true blood vessels.",
   },
+
 
 {
     id: "paxillus-involutus",
@@ -2364,8 +2467,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Birch and mixed forests; also in gardens near birch",
     naRange: "Common across northern North America",
     morphology: { capShape: "Convex with persistently inrolled margin, olive-brown; gills easily detach, bruise brown", gillAttachment: "Decurrent", sporeColor: "Brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/31489/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Paxillus_involutus.jpg/400px-Paxillus_involutus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2534352,
     rarity: 20,
@@ -2373,6 +2476,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Was eaten in Eastern Europe for centuries, but is now known to cause fatal immune hemolysis — the immune system attacks red blood cells — after repeated exposure.",
   },
+
 
 {
     id: "xerocomellus-chrysenteron",
@@ -2386,8 +2490,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed woodland with oak, beech, and hazel",
     naRange: "Eastern North America; more common in Europe",
     morphology: { capShape: "Convex, olive-brown to red-brown; cap cuticle cracks to reveal red flesh; pores yellow", gillAttachment: "Tubes/pores", sporeColor: "Olive-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/41843/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Xerocomellus_chrysenteron.jpg/400px-Xerocomellus_chrysenteron.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5954002,
     rarity: 25,
@@ -2395,6 +2499,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The cracked cap revealing red flesh underneath is its most distinctive feature — as if the skin of the mushroom has dried and split.",
   },
+
 
 {
     id: "leccinum-aurantiacum",
@@ -2408,8 +2513,8 @@ export const FUNGI: Fungus[] = [
     habitat: "With aspen (Populus) and sometimes oak; occasional with birch",
     naRange: "Widespread across northern North America",
     morphology: { capShape: "Convex, vivid orange-red; stalk with dark scabers; flesh turns grey-black when cut", gillAttachment: "Tubes/pores", sporeColor: "Brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/29034/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Leccinum_aurantiacum.jpg/400px-Leccinum_aurantiacum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 7892430,
     rarity: 40,
@@ -2417,6 +2522,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The flesh turns grey and then black when cut or bruised — an unusual reaction caused by oxidizing enzymes that is harmless and doesn't affect flavor.",
   },
+
 
 {
     id: "suillus-granulatus",
@@ -2430,8 +2536,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Pine forests; associated exclusively with pines",
     naRange: "Common across North America wherever pines grow",
     morphology: { capShape: "Convex, honey-yellow to tawny, slimy; pores exude white milk droplets when young", gillAttachment: "Tubes/pores", sporeColor: "Pale brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/49372/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Suillus_granulatus.jpg/400px-Suillus_granulatus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5953909,
     rarity: 25,
@@ -2439,6 +2545,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Young pores weep milky droplets of spore-containing fluid — this milky exudate is characteristic and a reliable identification feature.",
   },
+
 
 {
     id: "caloboletus-calopus",
@@ -2452,8 +2559,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Beech and mixed conifer-deciduous forests on acidic soils",
     naRange: "Eastern North America and Pacific Northwest",
     morphology: { capShape: "Convex, pale grey-brown; pores vivid red; stalk red-yellow with red reticulation; bruises blue", gillAttachment: "Tubes/pores", sporeColor: "Olive", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Caloboletus_calopus_2011_G3.jpg/400px-Caloboletus_calopus_2011_G3.jpg",
-    imageAttribution: "© Gerhard Koller / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Caloboletus_calopus.jpg/400px-Caloboletus_calopus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 7890082,
     rarity: 50,
@@ -2461,6 +2568,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Despite its attractive appearance with bright red pores, it is intensely bitter — the taste is enough to discourage consumption without danger.",
   },
+
 
 {
     id: "tapinella-atrotomentosa",
@@ -2474,8 +2582,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On conifer stumps and buried conifer roots",
     naRange: "Widespread across North America in conifer forests",
     morphology: { capShape: "Convex with inrolled margin, yellow-brown; thick velvety dark brown stem", gillAttachment: "Decurrent", sporeColor: "Yellow-brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/36892/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tapinella_atrotomentosa.jpg/400px-Tapinella_atrotomentosa.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2533049,
     rarity: 40,
@@ -2483,6 +2591,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its thick velvet-black stem is diagnostic — no other species looks quite like it; despite being a Boletales member it has gills rather than pores.",
   },
+
 
 {
     id: "gyroporus-castaneus",
@@ -2496,8 +2605,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous woodland with oak and chestnut on sandy soils",
     naRange: "Eastern North America",
     morphology: { capShape: "Convex, chestnut-brown; white pores; stem hollow when mature, same color as cap", gillAttachment: "Tubes/pores", sporeColor: "Pale yellow", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/53890/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gyroporus_castaneus.jpg/400px-Gyroporus_castaneus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5953789,
     rarity: 45,
@@ -2505,6 +2614,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Unlike most boletes, its stem becomes hollow when mature — a useful field mark that sets the Gyroporus genus apart.",
   },
+
 
 {
     id: "cerioporus-squamosus",
@@ -2518,8 +2628,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On living and dead elms, maples, and other hardwoods",
     naRange: "Very common across eastern North America",
     morphology: { capShape: "Fan-shaped, pale cream with dark brown scales in concentric rings; large pores below", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/32892/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Polyporus_squamosus.jpg/400px-Polyporus_squamosus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989192,
     rarity: 20,
@@ -2527,6 +2637,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Smells distinctly of watermelon rind; best eaten when young and tender — older specimens become very tough and leathery.",
   },
+
 
 {
     id: "polyporus-brumalis",
@@ -2540,8 +2651,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead hardwood sticks and branches",
     naRange: "Common across North America",
     morphology: { capShape: "Convex circular, pale grey-brown; underside with white pores; centrally stalked", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/48130/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Polyporus_brumalis.jpg/400px-Polyporus_brumalis.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989171,
     rarity: 30,
@@ -2549,6 +2660,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "insane",
     funFact: "Fruits in winter and early spring (the name 'brumalis' means 'of winter') — its cold tolerance is unusual among wood-decaying polypores.",
   },
+
 
 {
     id: "trichaptum-biforme",
@@ -2562,8 +2674,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead and dying hardwoods, especially birch and maple",
     naRange: "Extremely common across all of North America",
     morphology: { capShape: "Fan-shaped brackets with greyish-white upper surface; pores purple-violet when fresh", gillAttachment: "Tiny pores/teeth below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/29847/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Trichaptum_biforme.jpg/400px-Trichaptum_biforme.jpg",
+    imageAttribution: "© MO / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989197,
     rarity: 10,
@@ -2571,6 +2683,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "One of the most common wood-decay fungi in eastern North America; the violet pores fade to white with age, making young specimens much more striking.",
   },
+
 
 {
     id: "pycnoporus-cinnabarinus",
@@ -2584,8 +2697,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead hardwood, especially in sunny locations",
     naRange: "Common across North America",
     morphology: { capShape: "Fan-shaped bracket, vivid cinnabar-red to orange throughout; tiny pores", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/4830/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pycnoporus_cinnabarinus.jpg/400px-Pycnoporus_cinnabarinus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989162,
     rarity: 25,
@@ -2593,6 +2706,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its brilliant cinnabar-red color is produced by cinnabarinic acid, which is being studied as an antimicrobial compound against drug-resistant bacteria.",
   },
+
 
 {
     id: "daedaleopsis-confragosa",
@@ -2606,8 +2720,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead hardwoods, especially willow, alder, and birch",
     naRange: "Common across North America",
     morphology: { capShape: "Fan-shaped bracket, grey-brown; pores elongated maze-like, blush pink when bruised", gillAttachment: "Maze-like pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/39048/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Daedaleopsis_confragosa.jpg/400px-Daedaleopsis_confragosa.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989108,
     rarity: 25,
@@ -2615,6 +2729,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The pore surface turns pink when bruised — hence 'blushing' — a reaction caused by a phenolic pigment that oxidizes on contact with air.",
   },
+
 
 {
     id: "daedalea-quercina",
@@ -2628,8 +2743,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead oaks and other hardwoods; causes brown rot",
     naRange: "Eastern North America",
     morphology: { capShape: "Thick, hoof-shaped bracket, pale tan to grey-buff; underside labyrinthine maze of thick walls", gillAttachment: "Maze-like pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/14842/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Daedalea_quercina.jpg/400px-Daedalea_quercina.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989107,
     rarity: 30,
@@ -2637,6 +2752,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its pore surface is a three-dimensional labyrinth — the maze-like structure maximizes spore-releasing surface area within a compact structure.",
   },
+
 
 {
     id: "bjerkandera-adusta",
@@ -2650,8 +2766,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead hardwoods and occasionally conifers",
     naRange: "Very common across North America",
     morphology: { capShape: "Fan-shaped, white to grey; grey-black tiny pores; thin flexible bracket", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/43890/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bjerkandera_adusta.jpg/400px-Bjerkandera_adusta.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989064,
     rarity: 15,
@@ -2659,6 +2775,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Produces a unique grey-black pore surface from melanin — the same pigment as in human skin; its enzymes are studied for bioremediation of dyes.",
   },
+
 
 {
     id: "hapalopilus-nidulans",
@@ -2672,8 +2789,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead hardwood trees including oak, beech, and willow",
     naRange: "Eastern North America",
     morphology: { capShape: "Semicircular soft bracket, warm cinnamon-orange throughout; turns vivid purple with KOH", gillAttachment: "Tiny pores below", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/53249/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hapalopilus_nidulans.jpg/400px-Hapalopilus_nidulans.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5989130,
     rarity: 45,
@@ -2681,6 +2798,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "insane",
     funFact: "Contains polyporic acid — it turns bright purple when potassium hydroxide (KOH) is applied; ingestion causes kidney failure and a purple discoloration of urine.",
   },
+
 
 {
     id: "russula-virescens",
@@ -2694,8 +2812,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous forests with oak and beech",
     naRange: "Eastern North America",
     morphology: { capShape: "Convex, greenish cap breaking into irregular patches revealing white skin; brittle gills", gillAttachment: "Adnate", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/18030/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Russula_virescens.jpg/400px-Russula_virescens.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245762,
     rarity: 40,
@@ -2703,6 +2821,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The cracked green cap is diagnostic — no other common green mushroom has this 'quilted' pattern; considered one of the finest edible Russulas.",
   },
+
 
 {
     id: "russula-cyanoxantha",
@@ -2716,8 +2835,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Broad-leaved woodland with oak, beech, and hazel",
     naRange: "Eastern North America",
     morphology: { capShape: "Convex, variable — violet-grey to olive-green to lilac; gills white, greasy to touch", gillAttachment: "Adnate", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/24030/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Russula_cyanoxantha.jpg/400px-Russula_cyanoxantha.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245690,
     rarity: 30,
@@ -2725,6 +2844,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The most variable Russula in cap color; the greasy (non-brittle) gill texture distinguishes it from similar species.",
   },
+
 
 {
     id: "russula-foetens",
@@ -2738,8 +2858,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed woodland, often in damp areas",
     naRange: "Widespread across North America",
     morphology: { capShape: "Convex to flat, honey-yellow to ochre, striate margin; oily fetid rancid smell", gillAttachment: "Adnate", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/58490/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Russula_foetens.jpg/400px-Russula_foetens.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245704,
     rarity: 25,
@@ -2747,6 +2867,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Its rancid, oily smell — like motor oil or old dish water — is overpowering and makes it one of the most easily identified Russulas by scent alone.",
   },
+
 
 {
     id: "lactarius-torminosus",
@@ -2760,8 +2881,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Birch forests and mixed woodland with birch",
     naRange: "Northern North America wherever birch grows",
     morphology: { capShape: "Convex with persistently inrolled woolly-fringed margin, salmon-pink with concentric zones; white acrid latex", gillAttachment: "Decurrent", sporeColor: "Pale cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/24348/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Lactarius_torminosus.jpg/400px-Lactarius_torminosus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245810,
     rarity: 30,
@@ -2769,6 +2890,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Causes severe gastric cramps (hence 'torminosus' = griping) but is eaten pickled in Scandinavia after lengthy preparation to neutralize the acrid compounds.",
   },
+
 
 {
     id: "lactarius-piperatus",
@@ -2782,8 +2904,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Deciduous and mixed woodland, especially with oak and beech",
     naRange: "Eastern North America",
     morphology: { capShape: "Convex to vase-shaped, pure white, smooth, dry; crowded white gills; acrid white latex", gillAttachment: "Decurrent", sporeColor: "White to pale cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/63490/medium.jpg",
-    imageAttribution: "© Amadej Trnkoczy / iNaturalist CC-BY-NC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Lactarius_piperatus.jpg/400px-Lactarius_piperatus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245805,
     rarity: 30,
@@ -2791,6 +2913,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Has the most intensely acrid latex of any Lactarius — the burning peppery taste is caused by sesquiterpene compounds and lingers for minutes.",
   },
+
 
 {
     id: "lactarius-volemus",
@@ -2804,8 +2927,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Broad-leaved and mixed forests; oak, beech, hornbeam",
     naRange: "Eastern North America",
     morphology: { capShape: "Convex, dry, tawny-orange to russet; copious white latex that dries brown; fishy smell", gillAttachment: "Decurrent", sporeColor: "White to cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/43029/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lactarius_volemus.jpg/400px-Lactarius_volemus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 5245820,
     rarity: 40,
@@ -2813,6 +2936,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Bleeds copious white latex when cut that quickly browns and dries; the strong fishy or herring-like smell is unique among woodland mushrooms.",
   },
+
 
 {
     id: "hericium-coralloides",
@@ -2826,8 +2950,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead and dying hardwoods, especially beech and oak",
     naRange: "Eastern North America",
     morphology: { capShape: "White branching coral with downward-pointing teeth on branch tips; no main cap", gillAttachment: "Spines/teeth", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/3849/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hericium_coralloides.jpg/400px-Hericium_coralloides.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2553571,
     rarity: 55,
@@ -2835,6 +2959,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Unlike Lion's Mane (H. erinaceus), the teeth here grow on branching coral-like arms rather than hanging in a single mass — making it easier to identify.",
   },
+
 
 {
     id: "aleuria-aurantia",
@@ -2848,8 +2973,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Bare soil on disturbed ground, roadsides, gardens, and wood chips",
     naRange: "Common across North America",
     morphology: { capShape: "Cup to saucer-shaped, vivid orange inside, whitish and powdery outside", gillAttachment: "None (cup fungus)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/4829/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Aleuria_aurantia.jpg/400px-Aleuria_aurantia.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268458,
     rarity: 30,
@@ -2857,6 +2982,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Almost looks artificial — its brilliant orange color exactly mimics a discarded orange peel, which has led to it being called 'Orange Peel Fungus.'",
   },
+
 
 {
     id: "daldinia-concentrica",
@@ -2870,8 +2996,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On dead ash and other hardwood trees",
     naRange: "Common across North America",
     morphology: { capShape: "Round to irregular, shiny black exterior; silver-and-black concentric rings inside", gillAttachment: "None (stromata)", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/18392/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Daldinia_concentrica.jpg/400px-Daldinia_concentrica.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3269882,
     rarity: 25,
@@ -2879,6 +3005,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "The purple-black balls can smolder for hours, making them a traditional fire-starter; cross-section reveals beautiful alternating metallic rings.",
   },
+
 
 {
     id: "bulgaria-inquinans",
@@ -2892,8 +3019,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Clustered on recently felled oak trunks and logs in autumn",
     naRange: "Eastern North America",
     morphology: { capShape: "Rubbery top-shaped black cup, gelatinous; black disc-shaped ascus surface", gillAttachment: "None (cup fungus)", sporeColor: "Black", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/27049/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulgaria_inquinans.jpg/400px-Bulgaria_inquinans.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268637,
     rarity: 30,
@@ -2901,6 +3028,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Named 'inquinans' because touching the black discs leaves an indelible black stain on fingers — caused by the black spore mass.",
   },
+
 
 {
     id: "rhytisma-acerinum",
@@ -2914,8 +3042,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On living maple (Acer) leaves; overwinters on fallen leaves",
     naRange: "Extremely common across North America wherever maples grow",
     morphology: { capShape: "Glossy black raised tar-like spots on maple leaves; irregular outline", gillAttachment: "None (leaf pathogen)", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/18483/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Rhytisma_acerinum.jpg/400px-Rhytisma_acerinum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3267780,
     rarity: 10,
@@ -2923,6 +3051,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The spots look like drops of tar burned into the leaf; nearly every maple tree in North America is infected, yet the fungus rarely kills its host.",
   },
+
 
 {
     id: "claviceps-purpurea",
@@ -2936,8 +3065,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On rye, wheat, and wild grasses — replaces the grain with a hard purple-black sclerotium",
     naRange: "Widespread wherever grasses and cereals grow in North America",
     morphology: { capShape: "Hard purple-black elongated sclerotium replacing the grain; tiny club-shaped stromata in spring", gillAttachment: "None (sclerotium)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Claviceps_purpurea_02.jpg/400px-Claviceps_purpurea_02.jpg",
-    imageAttribution: "© Dominique Jacquin / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Claviceps_purpurea.jpg/400px-Claviceps_purpurea.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3269840,
     rarity: 30,
@@ -2945,6 +3074,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "easy",
     funFact: "Ergot alkaloids caused the medieval plague 'St. Anthony's Fire'; they are also the basis for the synthesis of LSD, discovered by Albert Hofmann in 1943.",
   },
+
 
 {
     id: "trichoglossum-hirsutum",
@@ -2958,8 +3088,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Damp grassland, mossy areas, and woodland edges; often in short turf",
     naRange: "Common across North America",
     morphology: { capShape: "Black velvety club-shaped tongue, flattened head; densely hairy from stiff setae", gillAttachment: "None (club)", sporeColor: "Dark brown", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/38940/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Trichoglossum_hirsutum.jpg/400px-Trichoglossum_hirsutum.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268748,
     rarity: 40,
@@ -2967,6 +3097,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "The earthtongues are an ancient lineage of ascomycetes; their tongue-like form is convergent with the unrelated Cudonia and Spathularia in other genera.",
   },
+
 
 {
     id: "leotia-lubrica",
@@ -2980,8 +3111,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Damp woodland, often in groups in leaf litter and moss",
     naRange: "Common across North America",
     morphology: { capShape: "Gelatinous convex ochre-olive cap on gelatinous greenish stalk; rubbery and slimy", gillAttachment: "None (club/cap fungus)", sporeColor: "Cream", hasRing: false, hasVolva: false },
-    imageUrl: "https://inaturalist-open-data.s3.amazonaws.com/photos/28930/medium.jpg",
-    imageAttribution: "© Jason Hollinger / iNaturalist CC-BY",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Leotia_lubrica.jpg/400px-Leotia_lubrica.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3268624,
     rarity: 30,
@@ -2989,6 +3120,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "hard",
     funFact: "Named 'Jelly Baby' for its resemblance to the gelatinous candy; its slippery texture is caused by a gelatinized outer layer of tissue.",
   },
+
 
 {
     id: "hymenoscyphus-fraxineus",
@@ -3002,8 +3134,8 @@ export const FUNGI: Fungus[] = [
     habitat: "On ash (Fraxinus) leaf rachises; deadly pathogen of European and North American ash trees",
     naRange: "Spreading across eastern North America; native to Asia",
     morphology: { capShape: "Tiny creamy-white cup fungi on blackened ash leaf stalks; 3-8mm diameter", gillAttachment: "None (cup fungus)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hymenoscyphus_fraxineus_2.jpg/400px-Hymenoscyphus_fraxineus_2.jpg",
-    imageAttribution: "© Owe Nilsson / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Hymenoscyphus_fraxineus.jpg/400px-Hymenoscyphus_fraxineus.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3266562,
     rarity: 20,
@@ -3011,6 +3143,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Has killed over 100 million ash trees in Europe since 2006 and threatens to eliminate ash from North American forests — one of the most destructive plant pathogens ever recorded.",
   },
+
 
 {
     id: "cunninghamella-elegans",
@@ -3024,8 +3157,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Soil and decaying organic matter; cosmopolitan",
     naRange: "Widespread across warm regions of North America",
     morphology: { capShape: "White branching sporangiophores with globose spore-bearing vesicles", gillAttachment: "None (zygomycete)", sporeColor: "White", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cunninghamella_elegans.jpg/400px-Cunninghamella_elegans.jpg",
-    imageAttribution: "© Medmyco / Wikimedia Commons CC-BY-SA",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cunninghamella_elegans.jpg/400px-Cunninghamella_elegans.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 3267698,
     rarity: 50,
@@ -3033,6 +3166,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "insane",
     funFact: "Extensively used in pharmaceutical research as a 'microbial model' of mammalian drug metabolism — it converts drugs to metabolites just as the human liver does.",
   },
+
 
 {
     id: "batrachochytrium-dendrobatidis",
@@ -3046,8 +3180,8 @@ export const FUNGI: Fungus[] = [
     habitat: "Aquatic and semi-aquatic habitats worldwide; infects amphibian skin",
     naRange: "Widespread in moist environments across North America; particularly destructive in western mountains",
     morphology: { capShape: "Microscopic zoospore-producing thallus within amphibian skin cells", gillAttachment: "None (chytrid)", sporeColor: "N/A", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Batrachochytrium_dendrobatidis.jpg/400px-Batrachochytrium_dendrobatidis.jpg",
-    imageAttribution: "© US Geological Survey / Wikimedia Commons CC0",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Batrachochytrium_dendrobatidis.jpg/400px-Batrachochytrium_dendrobatidis.jpg",
+    imageAttribution: "© Strobilomyces / CC BY-SA 3.0",
     crossSectionUrl: null,
     gbifId: 2538940,
     rarity: 40,
@@ -3055,6 +3189,7 @@ export const FUNGI: Fungus[] = [
     difficulty: "medium",
     funFact: "Considered the most destructive vertebrate pathogen ever recorded — responsible for the decline or extinction of over 200 amphibian species worldwide.",
   },
+
 
 {
     id: "allomyces-reticulatus",
@@ -3068,7 +3203,7 @@ export const FUNGI: Fungus[] = [
     habitat: "Freshwater and moist soil; aquatic or semi-aquatic environments",
     naRange: "Tropical and subtropical regions of North America",
     morphology: { capShape: "Microscopic branching filamentous thallus with alternating diploid and haploid generations", gillAttachment: "None (chytrid-like)", sporeColor: "N/A", hasRing: false, hasVolva: false },
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Allomyces.jpg/400px-Allomyces.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Allomyces.jpg/400px-Allomyces.jpg",
     imageAttribution: "© Wikimedia Commons / Public Domain",
     crossSectionUrl: null,
     gbifId: 3267540,
