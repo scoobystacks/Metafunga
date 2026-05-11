@@ -25,7 +25,10 @@ def inat_photo(scientific_name: str) -> tuple[str, str] | None:
     """Return (photo_url, attribution) or None."""
     q = urllib.parse.quote(scientific_name)
     url = f"https://api.inaturalist.org/v1/taxa/search?q={q}&limit=3"
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    req = urllib.request.Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "application/json",
+    })
     try:
         with urllib.request.urlopen(req, timeout=12) as resp:
             data = json.loads(resp.read())
