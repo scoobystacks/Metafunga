@@ -118,40 +118,45 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
                 </div>
               )}
 
-              {/* Non-clustered guess bubbles */}
-              {guessesHere.length > 0 && (
-                <div className="flex items-center gap-1 flex-wrap pt-1">
-                  <div className="w-3 h-px bg-spore-200 flex-shrink-0 mt-3" />
-                  <div className="flex flex-wrap gap-1">
-                    {guessesHere.map((guess) => (
-                      <GuessBubble key={guess.fungusId} guess={guess} />
-                    ))}
-                  </div>
+              {/* Side branches: individual guesses + dead-end clusters, stacked vertically */}
+              {(guessesHere.length > 0 || (isRevealed && clustersHere.length > 0)) && (
+                <div className="flex flex-col gap-2 pt-1">
+                  {/* Non-clustered guess bubbles */}
+                  {guessesHere.length > 0 && (
+                    <div className="flex items-start gap-1">
+                      <div className="w-3 h-px bg-spore-200 flex-shrink-0 mt-[14px]" />
+                      <div className="flex flex-col gap-1">
+                        {guessesHere.map((guess) => (
+                          <GuessBubble key={guess.fungusId} guess={guess} />
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Dead-end cluster branches */}
+                  {isRevealed && clustersHere.map((cluster) => (
+                    <div key={`${cluster.rank}:${cluster.value}`} className="flex items-start gap-1">
+                      <div className="w-3 h-px bg-stone-300 flex-shrink-0 mt-[14px]" />
+                      <div className="flex flex-col gap-1">
+                        <div className="flex flex-col items-start px-2 py-1 rounded-lg border border-dashed border-stone-400 bg-stone-100 text-stone-700 w-fit min-w-[80px]">
+                          <span className="text-[7px] font-bold uppercase tracking-widest text-stone-400 leading-none mb-0.5">
+                            {rankLabel(cluster.rank)}
+                          </span>
+                          <span className="text-[9px] font-semibold italic leading-tight">
+                            {cluster.value}
+                          </span>
+                        </div>
+                        <div className="flex flex-col gap-1 ml-1">
+                          {cluster.guessFungusIds.map((id) => {
+                            const g = guesses.find((gg) => gg.fungusId === id);
+                            return g ? <GuessBubble key={id} guess={g} /> : null;
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               )}
-
-              {/* Dead-end cluster branches */}
-              {isRevealed && clustersHere.map((cluster) => (
-                <div key={`${cluster.rank}:${cluster.value}`} className="flex items-start gap-0.5 pt-1">
-                  <div className="w-3 h-px bg-stone-300 flex-shrink-0 mt-[14px]" />
-                  <div className="flex flex-col gap-1">
-                    <div className="flex flex-col items-start px-2 py-1 rounded-lg border border-dashed border-stone-400 bg-stone-100 text-stone-700 w-fit min-w-[80px]">
-                      <span className="text-[7px] font-bold uppercase tracking-widest text-stone-400 leading-none mb-0.5">
-                        {rankLabel(cluster.rank)}
-                      </span>
-                      <span className="text-[9px] font-semibold italic leading-tight">
-                        {cluster.value}
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap gap-1 ml-1">
-                      {cluster.guessFungusIds.map((id) => {
-                        const g = guesses.find((gg) => gg.fungusId === id);
-                        return g ? <GuessBubble key={id} guess={g} /> : null;
-                      })}
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
 
             {/* Wikipedia inline preview */}
@@ -181,7 +186,7 @@ function GuessBubble({ guess }: { guess: Guess }) {
 
   return (
     <div
-      className={`text-[9px] font-medium px-1.5 py-0.5 rounded-lg border text-center leading-tight break-words max-w-[88px] ${colorClass}`}
+      className={`text-[9px] font-medium px-1.5 py-0.5 rounded-lg border leading-tight whitespace-nowrap ${colorClass}`}
       title={`${guess.commonName} (${guess.scientificName})`}
     >
       {guess.commonName}
