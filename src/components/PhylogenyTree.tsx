@@ -64,7 +64,7 @@ export function PhylogenyTree({ target, revealedRanks, hintRevealedRanks, guesse
   });
 
   return (
-    <div className="w-full py-1 overflow-x-hidden">
+    <div className="w-full py-1 overflow-x-auto">
       {ranksToRender.map((rank, renderIndex) => {
         const rankIndex = RANKS.indexOf(rank);
         const isRevealed = effectiveRevealed.has(rank);
