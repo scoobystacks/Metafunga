@@ -117,7 +117,6 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose, mode 
                 alt={target.commonName}
                 className="w-36 h-36 object-cover rounded-xl shadow-md"
               />
-              <span className="text-xs text-spore-400">Main photo</span>
             </div>
             {target.crossSectionUrl && (
               <div className="flex flex-col items-center gap-1">

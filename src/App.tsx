@@ -14,8 +14,8 @@ function pickPracticeFungus(
   excludeId: string,
   difficulty: PracticeDifficulty
 ): { fungus: typeof FUNGI[0]; seed: number } {
-  // "insane" draws from the full 136-entry database; other tiers use the active top-50.
-  const base = difficulty === "insane" ? FUNGI : ACTIVE_FUNGI;
+  // "hard" and "insane" draw from the full database; easy/medium use the active top-50.
+  const base = (difficulty === "insane" || difficulty === "hard") ? FUNGI : ACTIVE_FUNGI;
   const pool = base.filter(
     (f) => f.id !== excludeId && (difficulty === "any" || f.difficulty === difficulty)
   );
