@@ -31,9 +31,10 @@ interface Props {
   onHelp: () => void;
   onSwitchMode: () => void;
   onReset?: () => void;
+  onNewPractice?: () => void;
 }
 
-export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode, onReset }: Props) {
+export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode, onReset, onNewPractice }: Props) {
   // Practice games are ephemeral (storageKey = ""), daily uses localStorage
   const storageKey = mode === "practice" ? "" : undefined;
   const { state, submitGuess, useHint, hintDisabled, maxGuesses } = useGame(target, dayNumber, storageKey);
@@ -159,6 +160,7 @@ export function GameBoard({ target, dayNumber, mode, onHelp, onSwitchMode, onRes
           mode={mode}
           onPlayPractice={mode === "daily" ? onSwitchMode : undefined}
           onReset={onReset}
+          onNewPractice={onNewPractice}
         />
       )}
 

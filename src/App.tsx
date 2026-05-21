@@ -40,6 +40,7 @@ export default function App() {
   const [showHelp, setShowHelp] = useState(false);
   const [showDifficultyPicker, setShowDifficultyPicker] = useState(false);
   const [boardKey, setBoardKey] = useState(0);
+  const [practiceDifficulty, setPracticeDifficulty] = useState<PracticeDifficulty>("any");
 
   const [practiceState, setPracticeState] = useState<{
     fungus: typeof FUNGI[0];
@@ -48,12 +49,17 @@ export default function App() {
 
   const startPractice = useCallback(
     (difficulty: PracticeDifficulty) => {
+      setPracticeDifficulty(difficulty);
       setPracticeState(pickPracticeFungus(dailyFungus.id, difficulty));
       setMode("practice");
       setShowDifficultyPicker(false);
     },
     [dailyFungus.id]
   );
+
+  const handleNewPractice = useCallback(() => {
+    setPracticeState(pickPracticeFungus(dailyFungus.id, practiceDifficulty));
+  }, [dailyFungus.id, practiceDifficulty]);
 
   const handleSwitchMode = useCallback(() => {
     if (mode === "daily") {
@@ -90,6 +96,7 @@ export default function App() {
         onHelp={() => setShowHelp(true)}
         onSwitchMode={handleSwitchMode}
         onReset={mode === "daily" ? handleReset : undefined}
+        onNewPractice={mode === "practice" ? handleNewPractice : undefined}
       />
       {showHelp && <HowToPlay onClose={() => setShowHelp(false)} />}
 
