@@ -14,6 +14,7 @@ interface Props {
   mode?: "daily" | "practice";
   onPlayPractice?: () => void;
   onReset?: () => void;
+  onNewPractice?: () => void;
 }
 
 const DIFFICULTY_CLS: Record<Difficulty, string> = {
@@ -68,7 +69,7 @@ function buildShareText(
 const allRanksSet = new Set(RANKS) as Set<Rank>;
 const emptySet = new Set<Rank>();
 
-export function ResultModal({ target, status, guesses, dayNumber, onClose, mode = "daily", onPlayPractice, onReset }: Props) {
+export function ResultModal({ target, status, guesses, dayNumber, onClose, mode = "daily", onPlayPractice, onReset, onNewPractice }: Props) {
   const edibility = EDIBILITY_BADGE[target.edibility] ?? EDIBILITY_BADGE.inedible;
   const shareText = buildShareText(guesses, target.id, dayNumber, status);
 
@@ -117,7 +118,6 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose, mode 
                 alt={target.commonName}
                 className="w-36 h-36 object-cover rounded-xl shadow-md"
               />
-              <span className="text-xs text-spore-400">Main photo</span>
             </div>
             {target.crossSectionUrl && (
               <div className="flex flex-col items-center gap-1">
@@ -238,6 +238,16 @@ export function ResultModal({ target, status, guesses, dayNumber, onClose, mode 
               Close
             </button>
           </div>
+
+          {/* New practice game button (shown in practice mode) */}
+          {mode === "practice" && onNewPractice && (
+            <button
+              onClick={onNewPractice}
+              className="w-full py-3 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm border border-amber-200 hover:bg-amber-200 transition-colors"
+            >
+              New practice game 🍄
+            </button>
+          )}
 
           {/* Practice game CTA (shown after daily game) */}
           {mode === "daily" && onPlayPractice && (
